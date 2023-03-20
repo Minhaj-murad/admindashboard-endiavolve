@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./admindata.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- fontawesome cdn link (6.2.1) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+</head>
+
+<body>
+    <section>
+        <div class="table-container mt-5 px-2">
+
+            <h2 class="alluserdata-heading">User Registration Form Lists</h2>
+
+            <div class="alluserdata-adduser">
+                <button class="alluserdata-adduserbtn">Add <i class="fa-solid fa-plus"
+                        id="alluserdata-addbtn"></i></button>
+            </div>
+
+            <table class="table table-responsive  ">
+
+
+
+
+                <thead>
+                    <tr class="alluserdata-tablehead">
+
+                        <th class="alluserdata-tabledata-head">ID</th>
+                        <th class="alluserdata-tabledata-head">Name</th>
+                        <th class="alluserdata-tabledata-head">Email
+                        </th>
+                        <th class="alluserdata-tabledata-head">Mobile Number
+                        </th>
+                        <th class="alluserdata-tabledata-head">Date of Birth
+                        </th>
+                        <th class="alluserdata-tabledata-head">Gender
+                        </th>
+                        <th class="alluserdata-tabledata-head">University
+                        </th>
+                        <th class="alluserdata-tabledata-head">Course
+                        </th>
+                        <th class="alluserdata-tabledata-head">Branch
+                        </th>
+                        <th class="alluserdata-tabledata-head">Semester
+                        </th>
+                        <th class="alluserdata-tabledata-head">View
+                        </th>
+                        <th class="alluserdata-tabledata-head">Edit
+                        </th>
+                        <th class="alluserdata-tabledata-head">Delete
+                        </th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-row">
+
+                        <td class="alluserdata-tabledata">1</td>
+                        <td class="alluserdata-tabledata">Sohel Taj</td>
+                        <td class="alluserdata-tabledata">
+                            sohletaj@gmail.com
+                        </td>
+                        <td class="alluserdata-tabledata">+8801818484799</td>
+
+                        <td class="alluserdata-tabledata">Sep 14, 2022
+                        </td>
+                        <td class="alluserdata-tabledata">Male
+                        </td>
+                        <td class="alluserdata-tabledata">Chittagong University
+                        </td>
+                        <td class="alluserdata-tabledata">Soil Science Engineering
+                        </td>
+                        <td class="alluserdata-tabledata">Marinate Engineering
+                        </td>
+                        <td class="alluserdata-tabledata">3rd
+                        </td>
+                        <td class="alluserdata-tabledata">
+
+                            <a class="alluserdata-view" href=""><i class="fa-solid fa-eye"></i></a> <br>
+
+
+                        </td>
+                        <td class="alluserdata-tabledata">
+
+                            <a class="alluserdata-edit" href=""><i class="fa-solid fa-pen-to-square"></i></a> <br>
+
+
+                        </td>
+                        <td class="alluserdata-tabledata">
+
+                            <!-- Button trigger modal -->
+                            
+                                <a class="alluserdata-delete" href="" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"><i class="fa-solid fa-trash-can"></i></a>
+                          
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="0" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        
+                                        <div class="modal-body">
+                                           <h5> Are you sure,you want to delete this user?</h5> <br>
+                                            <div class="alluserdata-modal-body">
+                                                <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-danger">Delete</button>
+                                            </div>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                           
+
+                        </td>
+
+                    </tr>
+                    <tr class="table-row">
+
+                        <td class="alluserdata-tabledata">2</td>
+                        <td class="alluserdata-tabledata">Faysal Kibria</td>
+                        <td class="alluserdata-tabledata">
+                            thurkerephat65@gmail.com
+                        </td>
+                        <td class="alluserdata-tabledata">+8801876625737</td>
+
+                        <td class="alluserdata-tabledata">March 7, 1997
+                        </td>
+                        <td class="alluserdata-tabledata">Male
+                        </td>
+                        <td class="alluserdata-tabledata">MES College
+                        </td>
+                        <td class="alluserdata-tabledata">Zoology
+                        </td>
+                        <td class="alluserdata-tabledata">Bachelor of Science
+                        </td>
+                        <td class="alluserdata-tabledata">7th
+                        </td>
+                        <td class="alluserdata-tabledata">
+
+                            <a class="alluserdata-view" href=""><i class="fa-solid fa-eye"></i></a> <br>
+
+
+                        </td>
+                        <td class="alluserdata-tabledata">
+
+                            <a class="alluserdata-edit" href=""><i class="fa-solid fa-pen-to-square"></i></a> <br>
+
+
+                        </td>
+                          <td class="alluserdata-tabledata">
+
+                            <!-- Button trigger modal -->
+                            
+                                <a class="alluserdata-delete" href="" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"><i class="fa-solid fa-trash-can"></i></a>
+                          
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="0" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        
+                                        <div class="modal-body">
+                                           <h5 > Are you sure,you want to delete this user?</h5> <br>
+                                            <div class="alluserdata-modal-body">
+                                                <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-danger">Delete</button>
+                                            </div>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                           
+
+                        </td>
+
+
+                    </tr>
+                    <tr class="table-row">
+
+                        <td class="alluserdata-tabledata">3</td>
+                        <td class="alluserdata-tabledata">Fahim Sikder</td>
+                        <td class="alluserdata-tabledata">
+                            fahimsikder@gmail.com
+                        </td>
+                        <td class="alluserdata-tabledata">+8801831522617</td>
+
+                        <td class="alluserdata-tabledata">June 4, 1995
+                        </td>
+                        <td class="alluserdata-tabledata">Male
+                        </td>
+                        <td class="alluserdata-tabledata">Fatikchhari University
+                        </td>
+                        <td class="alluserdata-tabledata">Business Management
+                        </td>
+                        <td class="alluserdata-tabledata">Bachelor of Honours
+                        </td>
+                        <td class="alluserdata-tabledata">5th
+                        </td>
+                        <td class="alluserdata-tabledata">
+
+                            <a class="alluserdata-view" href=""><i class="fa-solid fa-eye"></i></a> <br>
+
+
+                        </td>
+                        <td class="alluserdata-tabledata">
+
+                            <a class="alluserdata-edit" href=""><i class="fa-solid fa-pen-to-square"></i></a> <br>
+
+
+                        </td>
+                          <td class="alluserdata-tabledata">
+
+                            <!-- Button trigger modal -->
+                            
+                                <a class="alluserdata-delete" href="" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"><i class="fa-solid fa-trash-can"></i></a>
+                          
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="0" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        
+                                        <div class="modal-body">
+                                           <h5> Are you sure,you want to delete this user?</h5> <br>
+                                            <div class="alluserdata-modal-body">
+                                                <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-danger">Delete</button>
+                                            </div>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                           
+
+                        </td>
+
+
+                    </tr>
+                    <tr class="table-row">
+
+                        <td class="alluserdata-tabledata">4</td>
+                        <td class="alluserdata-tabledata">Arfanul Rahul</td>
+                        <td class="alluserdata-tabledata">
+                            rahulkhan@gmail.com
+                        </td>
+                        <td class="alluserdata-tabledata">+8801818784758</td>
+
+                        <td class="alluserdata-tabledata">April 14,1996
+                        </td>
+                        <td class="alluserdata-tabledata">Male
+                        </td>
+                        <td class="alluserdata-tabledata">Rangamati University
+                        </td>
+                        <td class="alluserdata-tabledata">Humanities
+                        </td>
+                        <td class="alluserdata-tabledata">Bachelor of Arts
+                        </td>
+                        <td class="alluserdata-tabledata">8th
+                        </td>
+                        <td class="alluserdata-tabledata">
+
+                            <a class="alluserdata-view" href=""><i class="fa-solid fa-eye"></i></a> <br>
+
+
+                        </td>
+                        <td class="alluserdata-tabledata">
+
+                            <a class="alluserdata-edit" href=""><i class="fa-solid fa-pen-to-square"></i></a> <br>
+
+
+                        </td>
+                          <td class="alluserdata-tabledata">
+
+                            <!-- Button trigger modal -->
+                            
+                                <a class="alluserdata-delete" href="" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"><i class="fa-solid fa-trash-can"></i></a>
+                          
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="0" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        
+                                        <div class="modal-body">
+                                           <h5> Are you sure,you want to delete this user?</h5> <br>
+                                            <div class="alluserdata-modal-body">
+                                                <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-danger">Delete</button>
+                                            </div>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                           
+
+                        </td>
+
+
+                    </tr>
+                    <tr class="table-row">
+
+                        <td class="alluserdata-tabledata">5</td>
+                        <td class="alluserdata-tabledata">Arman Hossain</td>
+                        <td class="alluserdata-tabledata">
+                            armanhossain@gmail.com
+                        </td>
+                        <td class="alluserdata-tabledata">+8801818457867</td>
+
+                        <td class="alluserdata-tabledata">Aug 14, 1996
+                        </td>
+                        <td class="alluserdata-tabledata">Male
+                        </td>
+                        <td class="alluserdata-tabledata">Islamic University
+                        </td>
+                        <td class="alluserdata-tabledata">Medical Science Engineering
+                        </td>
+                        <td class="alluserdata-tabledata">M.B.B.S
+                        </td>
+                        <td class="alluserdata-tabledata">2nd
+                        </td>
+                        <td class="alluserdata-tabledata">
+
+                            <a class="alluserdata-view" href=""><i class="fa-solid fa-eye"></i></a> <br>
+
+
+                        </td>
+                        <td class="alluserdata-tabledata">
+
+                            <a class="alluserdata-edit" href=""><i class="fa-solid fa-pen-to-square"></i></a> <br>
+
+
+                        </td>
+                          <td class="alluserdata-tabledata">
+
+                            <!-- Button trigger modal -->
+                            
+                                <a class="alluserdata-delete" href="" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"><i class="fa-solid fa-trash-can"></i></a>
+                          
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="0" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        
+                                        <div class="modal-body">
+                                           <h5> Are you sure,you want to delete this user?</h5> <br>
+                                            <div class="alluserdata-modal-body">
+                                                <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-danger">Delete</button>
+                                            </div>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                           
+
+                        </td>
+
+
+                    </tr>
+
+
+
+
+
+                </tbody>
+            </table>
+
+
+            <ul class="pagination">
+                <li class="icon ">
+                    <a href="#" id="prev-icon">Prev</a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+
+
+                <li class="icon ">
+                    <a href="#" id="next-icon">Next</span></a>
+                </li>
+            </ul>
+
+        </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

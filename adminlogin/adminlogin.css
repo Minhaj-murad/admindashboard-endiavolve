@@ -135,6 +135,17 @@
   font-weight: 600;
   align-items: center;
 }
+.userlogin-others{
+    width: 30vw;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.userlogin-others-topics{
+    text-decoration: none;
+    font-weight: 600;
+}
 
 @media screen and (max-width: 626px) {
 
@@ -146,6 +157,9 @@
     padding-top: 20px;
     margin-inline: auto;
   
+}
+.userlogin-others{
+    width: 90vw;
 }
 }
 

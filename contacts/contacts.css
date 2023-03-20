@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed';
+  
+}
+
+.contactlists-page {
+    padding: 20px;
+   
+    
+}
+.contactlists-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 20px;
+    color: #fff;
+    background-color: #213832;
+}
+
+.contactlists-heading-text{
+    color: #fff;
+}
+
+.contactlists-td{
+   
+    margin: auto 
+}
+.modal-add {
+    width: 500px;
+    border-radius: 0;
+}
+
+.modal-delete {
+    width: 400px;
+}
+
+.contactlists-add {
+    margin: 10px;
+    padding: 10px;
+    text-align: end;
+}
+
+.contactlists-user-btn {
+  
+    background: none;
+    color: white;
+    background-color: #3742fa;
+    border: 1px solid #41464b;
+    border-radius: 0;
+}
+
+.contactlists-user-btn:hover {
+    border: 1px solid #41464b;
+    color: #fff;
+    background-color: #ffa502;
+
+   
+}
+
+.contactlists-user-btn:active {
+    color: #fff;
+    background-color: #3742fa;
+}
+#contactlists-user-btn-plus{
+    color: white;
+    font-weight: 1000;
+}
+.contactlists {
+    display: flex;
+    overflow: auto;
+   
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid gray;
+}
+
+.contactlists-tabledata-head{
+    font-size: 15px;
+    text-align: center;
+  }
+.contactlists-tabledata{
+    text-align: center;
+}
+
+.contactlists-view{
+    font-size: 18px;
+    padding: 5px;
+    text-decoration: none;
+    color: cyan;
+  
+}
+.contactlists-view:hover{
+  color: cyan;
+   text-shadow: 0px 0px 20px cyan;
+ 
+}
+
+
+.contactlists-edit{
+    font-size: 18px;
+    padding: 5px;
+    text-decoration: none;
+    color: #0b5c02;
+  
+}
+.contactlists-edit:hover{
+    color: #0b5c02;
+    text-shadow: 0px 0px 20px #0b5c02;
+ 
+}
+.contactlists-delete{
+    font-size: 18px;
+    padding: 5px;
+    text-decoration: none;
+    color: #df0303;
+  
+}
+.contactlists-delete:hover{
+    color: #df0303;
+   text-shadow: 0px 0px 20px #df0303;;
+ 
+}
+.contactlists-user-pagination-area {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.contactlists-search {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+
+.contactlists-search {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+
+.contactlists-search-icon {
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: #3742fa;
+    border: none;
+    padding: 8px 15px;
+   
+}
+
+.contactlists-search-icon:hover {
+
+    background-color: #ffa502;
+}
+
+.pagination .page-item {
+    list-style: none;
+}
+
+.pagination .page-link {
+    background-color: #fff;
+    font-size: 14px;
+    color: #41464b;
+    font-weight: 600;
+    padding: 8px 18px;
+    border: 1px solid #000;
+}
+
+.pagination .page-item.active .page-link,
+.pagination .page-link:hover {
+    color: #fff;
+    background-color: #ffa502;
+}
+
+.user-data-feedback-form .form-control,
+.user-data-feedback-form .form-select {
+    border-radius: 0;
+    border-color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #414;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.user-data-feedback-form .form-select .option {
+    padding: 12px 20px;
+    margin: 8px;
+}
+
+.user-data-textarea-box {
+    display: flex;
+    position: relative;
+}
+
+.user-data-textarea-box textarea {
+    height: 110px;
+    resize: none;
+    overflow: hidden;
+}
+
+.user-data-textarea-box span {
+    color: #666;
+    position: absolute;
+    right: 10px;
+    bottom: 25px;
+}
+
+.user-data-feedback-form input::-webkit-outer-spin-button,
+.user-data-feedback-form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+.user-data-feedback-form input[type=number] {
+  -moz-appearance: textfield;
+  appearance: none;
+}
+
+.user-data-feedback-submit {
+    text-align: end;
+}
+
+.user-data-feedback-submit .btn {
+    color: #fff;
+    border-radius: 0;
+    width: 100px;
+    background-color: #3742fa;
+    transition: width .5s ease-in-out;
+}
+
+.user-data-feedback-submit .btn:hover {
+    background-color: #ffa502;
+}
+
+
+/* responsive */
+
+@media (max-width: 847px) {
+    .contactlists-add {
+        margin-right: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 719px) {
+
+    .modal-dialog {
+        width: auto;
+    }
+    
+    .user-data-feedback-form {
+        padding: 0;
+        border: none;
+    }
+
+    .contactlists {
+        padding: 0;
+    }
+
+    #contactlists-table {
+        font-size: 0.8em;
+        border-collapse: collapse;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .contactlists-tr > th,
+    .contactlists-tr > td {
+        padding: 7px 10px;
+    }
+
+    .contactlists-tr {
+        overflow: auto;
+    }
+}
+

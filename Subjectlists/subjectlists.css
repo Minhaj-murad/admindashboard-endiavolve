@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed';
+  
+}
+
+.subjectlists-page {
+    padding: 20px;
+ 
+    
+}
+.subjectlists-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 20px;
+    color: #fff;
+    background-color: #213832;
+}
+
+.subjectlists-heading-text{
+    color: #fff;
+}
+
+.subjectlists-td{
+   
+    margin: auto 
+}
+.modal-add {
+    width: 500px;
+    border-radius: 0;
+}
+
+.modal-delete {
+    width: 400px;
+}
+
+.subjectlists-add {
+    margin: 10px;
+    padding: 10px;
+    text-align: end;
+}
+
+.subjectlists-user-btn {
+  
+    background: none;
+    color: white;
+    background-color: #3742fa;
+    border: 1px solid #41464b;
+    border-radius: 0;
+}
+
+.subjectlists-user-btn:hover {
+    border: 1px solid #41464b;
+    color: #fff;
+    background-color: #ffa502;
+
+   
+}
+
+
+.subjectlists-user-btn:active {
+    color: #fff;
+    background-color: #3742fa;
+}
+
+.subjectlists-form-submit-btn {
+  
+    background: none;
+    color: white;
+    padding: 5px 20px;
+    background-color: #3742fa;
+    border: 1px solid #3742fa;
+    border-radius: 0;
+}
+
+.subjectlists-form-submit-btn:hover {
+    border: 1px solid #ffa502;
+    color: #fff;
+    background-color: #ffa502;
+
+   
+}
+.subjectlists-form-submit-btn:active {
+    color: #fff;
+    background-color: #3742fa;
+}
+
+
+#subjectlists-user-btn-plus{
+    color: #fff;
+    font-weight: 1000;
+}
+.subjectlists {
+    display: flex;
+    overflow: auto;
+   
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid gray;
+}
+
+.subjectlists-tabledata-head{
+    font-size: 15px;
+    text-align: center;
+  }
+.subjectlists-tabledata{
+    text-align: center;
+}
+
+.subjectlists-view{
+    font-size: 18px;
+    padding: 5px;
+    text-decoration: none;
+    color: cyan;
+  
+}
+.subjectlists-view:hover{
+  color: cyan;
+   text-shadow: 0px 0px 20px cyan;
+ 
+}
+
+
+.subjectlists-edit{
+    font-size: 18px;
+    padding: 5px;
+    text-decoration: none;
+    color: #0b5c02;
+  
+}
+.subjectlists-edit:hover{
+    color: #0b5c02;
+    text-shadow: 0px 0px 20px #0b5c02;
+ 
+}
+.subjectlists-delete{
+    font-size: 18px;
+    padding: 5px;
+    text-decoration: none;
+    color: #df0303;
+  
+}
+.subjectlists-delete:hover{
+    color: #df0303;
+   text-shadow: 0px 0px 20px #df0303;;
+ 
+}
+.subjectlists-user-pagination-area {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.subjectlists-search {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+
+.subjectlists-search {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+
+.subjectlists-search-icon {
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: #3742fa;
+    border: none;
+    padding: 8px 15px;
+   
+}
+
+.subjectlists-search-icon:hover {
+
+    background-color: #ffa502;
+}
+
+.pagination .page-item {
+    list-style: none;
+}
+
+.pagination .page-link {
+    background-color: #fff;
+    font-size: 14px;
+    color: #41464b;
+    font-weight: 600;
+    padding: 8px 18px;
+    border: 1px solid #000;
+}
+
+.pagination .page-item.active .page-link,
+.pagination .page-link:hover {
+    color: #fff;
+    background-color: #ffa502;
+}
+
+.user-data-feedback-form .form-control,
+.user-data-feedback-form .form-select {
+    border-radius: 0;
+    border-color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #414;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.user-data-feedback-form .form-select .option {
+    padding: 12px 20px;
+    margin: 8px;
+}
+
+.user-data-textarea-box {
+    display: flex;
+    position: relative;
+}
+
+.user-data-textarea-box textarea {
+    height: 110px;
+    resize: none;
+    overflow: hidden;
+}
+
+.user-data-textarea-box span {
+    color: #666;
+    position: absolute;
+    right: 10px;
+    bottom: 25px;
+}
+
+.user-data-feedback-form input::-webkit-outer-spin-button,
+.user-data-feedback-form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+.user-data-feedback-form input[type=number] {
+  -moz-appearance: textfield;
+  appearance: none;
+}
+
+.user-data-feedback-submit {
+    text-align: end;
+}
+
+.user-data-feedback-submit .btn {
+    color: #fff;
+    border-radius: 0;
+    width: 100px;
+    background-color: #3742fa;
+    transition: width .5s ease-in-out;
+}
+
+.user-data-feedback-submit .btn:hover {
+    background-color: #ffa502;
+}
+
+
+/* responsive */
+
+@media (max-width: 847px) {
+    .subjectlists-add {
+        margin-right: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 719px) {
+
+    .modal-dialog {
+        width: auto;
+    }
+    
+    .user-data-feedback-form {
+        padding: 0;
+        border: none;
+    }
+
+    .subjectlists {
+        padding: 0;
+    }
+
+    #subjectlists-table {
+        font-size: 0.8em;
+        border-collapse: collapse;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .subjectlists-tr > th,
+    .subjectlists-tr > td {
+        padding: 7px 10px;
+    }
+
+    .subjectlists-tr {
+        overflow: auto;
+    }
+}
