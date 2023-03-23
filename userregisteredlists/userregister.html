@@ -166,47 +166,49 @@
 
 
     <div>
-        <!-- admindash-sidebar Start -->
-        <div id="admindash-sidebar" class="admindash-sidebar">
-            <nav class="navbar bg-light navbar-light">
+    <!-- admindash-sidebar Start -->
+    <div id="admindash-sidebar" class="admindash-sidebar">
+        <nav class="navbar bg-light navbar-light">
 
-                <div class="navbar-nav w-100">
-                    <a href="index.html" class="nav-item nav-link "><i class="fa fa-tachometer-alt me-2 " style="
-                        background: none" style="
-                        background: none"></i><span class="admindash-user-text"> Dashboard</span></a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
-                                class="fa fa-laptop me-2 " style="
-                        background: none"></i><span class="admindash-user-text"> User Panel</span></a>
-                        <div class="dropdown-menu bg-transparent border-0">
-
-                            <a href="./userregister.html" class="dropdown-item">All Users</a>
-                            <a href="/Upload-Video-main/uploadvideos.html"
-                                class="dropdown-item">Upload Video</a>
-                            <a href="/Subjectlists/subjectlists.html" class="dropdown-item">Subject Lists</a>
-                            <a href="/Chapterlist/chapterlist.html" class="dropdown-item">Chapter Lists</a>
-
-                        </div>
+            <div class="navbar-nav w-100">
+                <a href="/admindashboard/admindash.html" class="nav-item nav-link "><i class="fa fa-tachometer-alt me-2 " style="
+                    background: none" style="
+                    background: none"></i><span class="admindash-user-text"> Dashboard</span></a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                            class="fa fa-laptop me-2 " style="
+                    background: none"></i><span class="admindash-user-text"> User Panel</span></a>
+                    <div class="dropdown-menu bg-transparent border-0" style="
+                    padding-block: 0;
+                    margin: 0;">
+                       
+                        <a href="/userregisteredlists/userregister.html" class="dropdown-item">All Users</a>
+                        <a href="/Upload-Video-main/uploadvideos.html" class="dropdown-item">Upload Video</a>
+                        <a href="/Subjectlists/subjectlists.html" class="dropdown-item">Subject Lists</a>
+                        <a href="/Chapterlist/chapterlist.html" class="dropdown-item">Chapter Lists</a>
+                       
                     </div>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
-                                class="fa fa-keyboard me-2 " style="
-                        background: none"></i><span class="admindash-user-text"> Landing Page</span></a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                         
-                            <a href="/blogs/blogs.html" class="dropdown-item">Blogs</a>
-                            <a href="/career/career.html" class="dropdown-item">Career Lists</a>
-                            <a href="/contacts/contacts.html" class="dropdown-item">Contact Us Lists</a>
-                            
-                        </div>
-                    </div>
-
-
                 </div>
-            </nav>
-        </div>
-        <!-- admindash-sidebar End -->
-
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                            class="fa fa-keyboard me-2 " style="
+                    background: none"></i><span class="admindash-user-text"> Landing Page</span></a>
+                    <div class="dropdown-menu bg-transparent border-0" style="
+                    padding-block: 0;
+                    margin: 0;">
+                     
+                        <a href="/blogs/blogs.html" class="dropdown-item">Blogs</a>
+                        <a href="/career/career.html" class="dropdown-item">Career Lists</a>
+                        <a href="/contacts/contacts.html" class="dropdown-item">Contact Us Lists</a>
+                        
+                    </div>
+                </div>
+                
+              
+            </div>
+        </nav>
+    </div>
+    <!-- admindash-sidebar End -->
 
 
 
@@ -240,7 +242,45 @@
                         <table class="table table-responsive table-striped ">
 
 
-
+                            <form action="" method="post">
+                                <div class="row m-4 justify-content-center g-3">
+                                    <div class=" col-12 col-md-4 col-lg-3 col-xl-2">
+                                        <select name="" id="" class="form-select playlist-select-subject">
+                                            <option value="" selected disabled>Select Semester</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+    
+                                        </select>
+                                    </div>
+    
+                                    <div class=" col-12 col-md-4 col-lg-3 col-xl-2">
+                                        <select name="" id="" class="form-select playlist-select-chapter">
+                                            <option value="" selected disabled>Select Course</option>
+                                            <option class="option" value="1">Btech</option>
+                                            <option class="option" value="2">BE</option>
+                                            <option class="option" value="3">Diploma</option>
+                                        </select>
+                                    </div>
+    
+                                    <div class=" col-12 col-md-4 col-lg-3 col-xl-2">
+                                        <select name="" id="" class="form-select playlist-select-chapter">
+                                            <option value="" selected disabled>Select Branch</option>
+                                            <option class="option" value="1">Computer Science and Engineering</option>
+                                            <option class="option" value="2">Electrical and Electronic Engineering</option>
+                                            <option class="option" value="3">Mechanical Engineering</option>
+                                        </select>
+                                    </div>
+                                    <div class=" col-12 col-md-4 col-lg-3 col-xl-2">
+                                        <button type="submit" class="alluserdata-submit-btn">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
 
                             <thead>
                                 <tr class="alluserdata-tablehead">
@@ -296,13 +336,13 @@
                                     </td>
                                     <td class="alluserdata-tabledata">
 
-                                        <a class="" href=""><i class="fa-solid fa-eye alluserdata-view "></i></a> <br>
+                                        <a class="" href="/alluser-view/alluser-view.html"><i class="fa-solid fa-eye alluserdata-view "></i></a> <br>
 
 
                                     </td>
                                     <td class="alluserdata-tabledata">
 
-                                        <a class="" href=""><i
+                                        <a class="" href="/alluser-edit/edit.html"><i
                                                 class="fa-solid fa-pen-to-square alluserdata-edit"></i></a> <br>
 
 
@@ -337,36 +377,37 @@
                                     </td>
 
                                 </tr>
+                               
                                 <tr class="table-row">
 
-                                    <td class="alluserdata-tabledata">2</td>
-                                    <td class="alluserdata-tabledata">Faysal Kibria</td>
+                                    <td class="alluserdata-tabledata">1</td>
+                                    <td class="alluserdata-tabledata">Sohel Taj</td>
                                     <td class="alluserdata-tabledata">
-                                        thurkerephat65@gmail.com
+                                        sohletaj@gmail.com
                                     </td>
-                                    <td class="alluserdata-tabledata">+8801876625737</td>
+                                    <td class="alluserdata-tabledata">+8801818484799</td>
 
-                                    <td class="alluserdata-tabledata">March 7, 1997
+                                    <td class="alluserdata-tabledata">Sep 14, 2022
                                     </td>
                                     <td class="alluserdata-tabledata">Male
                                     </td>
-                                    <td class="alluserdata-tabledata">MES College
+                                    <td class="alluserdata-tabledata">Chittagong University
                                     </td>
-                                    <td class="alluserdata-tabledata">Zoology
+                                    <td class="alluserdata-tabledata">Soil Science Engineering
                                     </td>
-                                    <td class="alluserdata-tabledata">Bachelor of Science
+                                    <td class="alluserdata-tabledata">Marinate Engineering
                                     </td>
-                                    <td class="alluserdata-tabledata">7th
-                                    </td>
-                                    <td class="alluserdata-tabledata">
-
-                                        <a class="" href=""><i class="fa-solid fa-eye alluserdata-view"></i></a> <br>
-
-
+                                    <td class="alluserdata-tabledata">3rd
                                     </td>
                                     <td class="alluserdata-tabledata">
 
-                                        <a class="" href=""><i
+                                        <a class="" href="/alluser-view/alluser-view.html"><i class="fa-solid fa-eye alluserdata-view "></i></a> <br>
+
+
+                                    </td>
+                                    <td class="alluserdata-tabledata">
+
+                                        <a class="" href="/alluser-edit/edit.html"><i
                                                 class="fa-solid fa-pen-to-square alluserdata-edit"></i></a> <br>
 
 
@@ -400,38 +441,38 @@
 
                                     </td>
 
-
                                 </tr>
+                               
                                 <tr class="table-row">
 
-                                    <td class="alluserdata-tabledata">3</td>
-                                    <td class="alluserdata-tabledata">Fahim Sikder</td>
+                                    <td class="alluserdata-tabledata">1</td>
+                                    <td class="alluserdata-tabledata">Sohel Taj</td>
                                     <td class="alluserdata-tabledata">
-                                        fahimsikder@gmail.com
+                                        sohletaj@gmail.com
                                     </td>
-                                    <td class="alluserdata-tabledata">+8801831522617</td>
+                                    <td class="alluserdata-tabledata">+8801818484799</td>
 
-                                    <td class="alluserdata-tabledata">June 4, 1995
+                                    <td class="alluserdata-tabledata">Sep 14, 2022
                                     </td>
                                     <td class="alluserdata-tabledata">Male
                                     </td>
-                                    <td class="alluserdata-tabledata">Fatikchhari University
+                                    <td class="alluserdata-tabledata">Chittagong University
                                     </td>
-                                    <td class="alluserdata-tabledata">Business Management
+                                    <td class="alluserdata-tabledata">Soil Science Engineering
                                     </td>
-                                    <td class="alluserdata-tabledata">Bachelor of Honours
+                                    <td class="alluserdata-tabledata">Marinate Engineering
                                     </td>
-                                    <td class="alluserdata-tabledata">5th
-                                    </td>
-                                    <td class="alluserdata-tabledata">
-
-                                        <a class="" href=""><i class="fa-solid fa-eye alluserdata-view"></i></a> <br>
-
-
+                                    <td class="alluserdata-tabledata">3rd
                                     </td>
                                     <td class="alluserdata-tabledata">
 
-                                        <a class="" href=""><i
+                                        <a class="" href="/alluser-view/alluser-view.html"><i class="fa-solid fa-eye alluserdata-view "></i></a> <br>
+
+
+                                    </td>
+                                    <td class="alluserdata-tabledata">
+
+                                        <a class="" href="/alluser-edit/edit.html"><i
                                                 class="fa-solid fa-pen-to-square alluserdata-edit"></i></a> <br>
 
 
@@ -465,38 +506,38 @@
 
                                     </td>
 
-
                                 </tr>
+                               
                                 <tr class="table-row">
 
-                                    <td class="alluserdata-tabledata">4</td>
-                                    <td class="alluserdata-tabledata">Arfanul Rahul</td>
+                                    <td class="alluserdata-tabledata">1</td>
+                                    <td class="alluserdata-tabledata">Sohel Taj</td>
                                     <td class="alluserdata-tabledata">
-                                        rahulkhan@gmail.com
+                                        sohletaj@gmail.com
                                     </td>
-                                    <td class="alluserdata-tabledata">+8801818784758</td>
+                                    <td class="alluserdata-tabledata">+8801818484799</td>
 
-                                    <td class="alluserdata-tabledata">April 14,1996
+                                    <td class="alluserdata-tabledata">Sep 14, 2022
                                     </td>
                                     <td class="alluserdata-tabledata">Male
                                     </td>
-                                    <td class="alluserdata-tabledata">Rangamati University
+                                    <td class="alluserdata-tabledata">Chittagong University
                                     </td>
-                                    <td class="alluserdata-tabledata">Humanities
+                                    <td class="alluserdata-tabledata">Soil Science Engineering
                                     </td>
-                                    <td class="alluserdata-tabledata">Bachelor of Arts
+                                    <td class="alluserdata-tabledata">Marinate Engineering
                                     </td>
-                                    <td class="alluserdata-tabledata">8th
-                                    </td>
-                                    <td class="alluserdata-tabledata">
-
-                                        <a class="" href=""><i class="fa-solid fa-eye alluserdata-view"></i></a> <br>
-
-
+                                    <td class="alluserdata-tabledata">3rd
                                     </td>
                                     <td class="alluserdata-tabledata">
 
-                                        <a class="" href=""><i
+                                        <a class="" href="/alluser-view/alluser-view.html"><i class="fa-solid fa-eye alluserdata-view "></i></a> <br>
+
+
+                                    </td>
+                                    <td class="alluserdata-tabledata">
+
+                                        <a class="" href="/alluser-edit/edit.html"><i
                                                 class="fa-solid fa-pen-to-square alluserdata-edit"></i></a> <br>
 
 
@@ -530,38 +571,38 @@
 
                                     </td>
 
-
                                 </tr>
+                               
                                 <tr class="table-row">
 
-                                    <td class="alluserdata-tabledata">5</td>
-                                    <td class="alluserdata-tabledata">Arman Hossain</td>
+                                    <td class="alluserdata-tabledata">1</td>
+                                    <td class="alluserdata-tabledata">Sohel Taj</td>
                                     <td class="alluserdata-tabledata">
-                                        armanhossain@gmail.com
+                                        sohletaj@gmail.com
                                     </td>
-                                    <td class="alluserdata-tabledata">+8801818457867</td>
+                                    <td class="alluserdata-tabledata">+8801818484799</td>
 
-                                    <td class="alluserdata-tabledata">Aug 14, 1996
+                                    <td class="alluserdata-tabledata">Sep 14, 2022
                                     </td>
                                     <td class="alluserdata-tabledata">Male
                                     </td>
-                                    <td class="alluserdata-tabledata">Islamic University
+                                    <td class="alluserdata-tabledata">Chittagong University
                                     </td>
-                                    <td class="alluserdata-tabledata">Medical Science Engineering
+                                    <td class="alluserdata-tabledata">Soil Science Engineering
                                     </td>
-                                    <td class="alluserdata-tabledata">M.B.B.S
+                                    <td class="alluserdata-tabledata">Marinate Engineering
                                     </td>
-                                    <td class="alluserdata-tabledata">2nd
-                                    </td>
-                                    <td class="alluserdata-tabledata">
-
-                                        <a class="" href=""><i class="fa-solid fa-eye alluserdata-view"></i></a> <br>
-
-
+                                    <td class="alluserdata-tabledata">3rd
                                     </td>
                                     <td class="alluserdata-tabledata">
 
-                                        <a class="" href=""><i
+                                        <a class="" href="/alluser-view/alluser-view.html"><i class="fa-solid fa-eye alluserdata-view "></i></a> <br>
+
+
+                                    </td>
+                                    <td class="alluserdata-tabledata">
+
+                                        <a class="" href="/alluser-edit/edit.html"><i
                                                 class="fa-solid fa-pen-to-square alluserdata-edit"></i></a> <br>
 
 
@@ -595,8 +636,398 @@
 
                                     </td>
 
+                                </tr>
+                               
+                                <tr class="table-row">
+
+                                    <td class="alluserdata-tabledata">1</td>
+                                    <td class="alluserdata-tabledata">Sohel Taj</td>
+                                    <td class="alluserdata-tabledata">
+                                        sohletaj@gmail.com
+                                    </td>
+                                    <td class="alluserdata-tabledata">+8801818484799</td>
+
+                                    <td class="alluserdata-tabledata">Sep 14, 2022
+                                    </td>
+                                    <td class="alluserdata-tabledata">Male
+                                    </td>
+                                    <td class="alluserdata-tabledata">Chittagong University
+                                    </td>
+                                    <td class="alluserdata-tabledata">Soil Science Engineering
+                                    </td>
+                                    <td class="alluserdata-tabledata">Marinate Engineering
+                                    </td>
+                                    <td class="alluserdata-tabledata">3rd
+                                    </td>
+                                    <td class="alluserdata-tabledata">
+
+                                        <a class="" href="/alluser-view/alluser-view.html"><i class="fa-solid fa-eye alluserdata-view "></i></a> <br>
+
+
+                                    </td>
+                                    <td class="alluserdata-tabledata">
+
+                                        <a class="" href="/alluser-edit/edit.html"><i
+                                                class="fa-solid fa-pen-to-square alluserdata-edit"></i></a> <br>
+
+
+                                    </td>
+                                    <td class="alluserdata-tabledata">
+
+                                        <!-- Button trigger modal -->
+
+                                        <a class="" href="" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                class="fa-solid fa-trash-can alluserdata-delete"></i></a>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="0"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+
+                                                    <div class="modal-body">
+                                                        <h5> Are you sure,you want to delete this user?</h5> <br>
+                                                        <div class="alluserdata-modal-body">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-danger">Delete</button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </td>
 
                                 </tr>
+                               
+                                <tr class="table-row">
+
+                                    <td class="alluserdata-tabledata">1</td>
+                                    <td class="alluserdata-tabledata">Sohel Taj</td>
+                                    <td class="alluserdata-tabledata">
+                                        sohletaj@gmail.com
+                                    </td>
+                                    <td class="alluserdata-tabledata">+8801818484799</td>
+
+                                    <td class="alluserdata-tabledata">Sep 14, 2022
+                                    </td>
+                                    <td class="alluserdata-tabledata">Male
+                                    </td>
+                                    <td class="alluserdata-tabledata">Chittagong University
+                                    </td>
+                                    <td class="alluserdata-tabledata">Soil Science Engineering
+                                    </td>
+                                    <td class="alluserdata-tabledata">Marinate Engineering
+                                    </td>
+                                    <td class="alluserdata-tabledata">3rd
+                                    </td>
+                                    <td class="alluserdata-tabledata">
+
+                                        <a class="" href="/alluser-view/alluser-view.html"><i class="fa-solid fa-eye alluserdata-view "></i></a> <br>
+
+
+                                    </td>
+                                    <td class="alluserdata-tabledata">
+
+                                        <a class="" href="/alluser-edit/edit.html"><i
+                                                class="fa-solid fa-pen-to-square alluserdata-edit"></i></a> <br>
+
+
+                                    </td>
+                                    <td class="alluserdata-tabledata">
+
+                                        <!-- Button trigger modal -->
+
+                                        <a class="" href="" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                class="fa-solid fa-trash-can alluserdata-delete"></i></a>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="0"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+
+                                                    <div class="modal-body">
+                                                        <h5> Are you sure,you want to delete this user?</h5> <br>
+                                                        <div class="alluserdata-modal-body">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-danger">Delete</button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </td>
+
+                                </tr>
+                               
+                                <tr class="table-row">
+
+                                    <td class="alluserdata-tabledata">1</td>
+                                    <td class="alluserdata-tabledata">Sohel Taj</td>
+                                    <td class="alluserdata-tabledata">
+                                        sohletaj@gmail.com
+                                    </td>
+                                    <td class="alluserdata-tabledata">+8801818484799</td>
+
+                                    <td class="alluserdata-tabledata">Sep 14, 2022
+                                    </td>
+                                    <td class="alluserdata-tabledata">Male
+                                    </td>
+                                    <td class="alluserdata-tabledata">Chittagong University
+                                    </td>
+                                    <td class="alluserdata-tabledata">Soil Science Engineering
+                                    </td>
+                                    <td class="alluserdata-tabledata">Marinate Engineering
+                                    </td>
+                                    <td class="alluserdata-tabledata">3rd
+                                    </td>
+                                    <td class="alluserdata-tabledata">
+
+                                        <a class="" href="/alluser-view/alluser-view.html"><i class="fa-solid fa-eye alluserdata-view "></i></a> <br>
+
+
+                                    </td>
+                                    <td class="alluserdata-tabledata">
+
+                                        <a class="" href="/alluser-edit/edit.html"><i
+                                                class="fa-solid fa-pen-to-square alluserdata-edit"></i></a> <br>
+
+
+                                    </td>
+                                    <td class="alluserdata-tabledata">
+
+                                        <!-- Button trigger modal -->
+
+                                        <a class="" href="" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                class="fa-solid fa-trash-can alluserdata-delete"></i></a>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="0"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+
+                                                    <div class="modal-body">
+                                                        <h5> Are you sure,you want to delete this user?</h5> <br>
+                                                        <div class="alluserdata-modal-body">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-danger">Delete</button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </td>
+
+                                </tr>
+                               
+                                <tr class="table-row">
+
+                                    <td class="alluserdata-tabledata">1</td>
+                                    <td class="alluserdata-tabledata">Sohel Taj</td>
+                                    <td class="alluserdata-tabledata">
+                                        sohletaj@gmail.com
+                                    </td>
+                                    <td class="alluserdata-tabledata">+8801818484799</td>
+
+                                    <td class="alluserdata-tabledata">Sep 14, 2022
+                                    </td>
+                                    <td class="alluserdata-tabledata">Male
+                                    </td>
+                                    <td class="alluserdata-tabledata">Chittagong University
+                                    </td>
+                                    <td class="alluserdata-tabledata">Soil Science Engineering
+                                    </td>
+                                    <td class="alluserdata-tabledata">Marinate Engineering
+                                    </td>
+                                    <td class="alluserdata-tabledata">3rd
+                                    </td>
+                                    <td class="alluserdata-tabledata">
+
+                                        <a class="" href="/alluser-view/alluser-view.html"><i class="fa-solid fa-eye alluserdata-view "></i></a> <br>
+
+
+                                    </td>
+                                    <td class="alluserdata-tabledata">
+
+                                        <a class="" href="/alluser-edit/edit.html"><i
+                                                class="fa-solid fa-pen-to-square alluserdata-edit"></i></a> <br>
+
+
+                                    </td>
+                                    <td class="alluserdata-tabledata">
+
+                                        <!-- Button trigger modal -->
+
+                                        <a class="" href="" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                class="fa-solid fa-trash-can alluserdata-delete"></i></a>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="0"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+
+                                                    <div class="modal-body">
+                                                        <h5> Are you sure,you want to delete this user?</h5> <br>
+                                                        <div class="alluserdata-modal-body">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-danger">Delete</button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </td>
+
+                                </tr>
+                               
+                                <tr class="table-row">
+
+                                    <td class="alluserdata-tabledata">1</td>
+                                    <td class="alluserdata-tabledata">Sohel Taj</td>
+                                    <td class="alluserdata-tabledata">
+                                        sohletaj@gmail.com
+                                    </td>
+                                    <td class="alluserdata-tabledata">+8801818484799</td>
+
+                                    <td class="alluserdata-tabledata">Sep 14, 2022
+                                    </td>
+                                    <td class="alluserdata-tabledata">Male
+                                    </td>
+                                    <td class="alluserdata-tabledata">Chittagong University
+                                    </td>
+                                    <td class="alluserdata-tabledata">Soil Science Engineering
+                                    </td>
+                                    <td class="alluserdata-tabledata">Marinate Engineering
+                                    </td>
+                                    <td class="alluserdata-tabledata">3rd
+                                    </td>
+                                    <td class="alluserdata-tabledata">
+
+                                        <a class="" href="/alluser-view/alluser-view.html"><i class="fa-solid fa-eye alluserdata-view "></i></a> <br>
+
+
+                                    </td>
+                                    <td class="alluserdata-tabledata">
+
+                                        <a class="" href="/alluser-edit/edit.html"><i
+                                                class="fa-solid fa-pen-to-square alluserdata-edit"></i></a> <br>
+
+
+                                    </td>
+                                    <td class="alluserdata-tabledata">
+
+                                        <!-- Button trigger modal -->
+
+                                        <a class="" href="" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                class="fa-solid fa-trash-can alluserdata-delete"></i></a>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="0"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+
+                                                    <div class="modal-body">
+                                                        <h5> Are you sure,you want to delete this user?</h5> <br>
+                                                        <div class="alluserdata-modal-body">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-danger">Delete</button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </td>
+
+                                </tr>
+                               
+                                <tr class="table-row">
+
+                                    <td class="alluserdata-tabledata">1</td>
+                                    <td class="alluserdata-tabledata">Sohel Taj</td>
+                                    <td class="alluserdata-tabledata">
+                                        sohletaj@gmail.com
+                                    </td>
+                                    <td class="alluserdata-tabledata">+8801818484799</td>
+
+                                    <td class="alluserdata-tabledata">Sep 14, 2022
+                                    </td>
+                                    <td class="alluserdata-tabledata">Male
+                                    </td>
+                                    <td class="alluserdata-tabledata">Chittagong University
+                                    </td>
+                                    <td class="alluserdata-tabledata">Soil Science Engineering
+                                    </td>
+                                    <td class="alluserdata-tabledata">Marinate Engineering
+                                    </td>
+                                    <td class="alluserdata-tabledata">3rd
+                                    </td>
+                                    <td class="alluserdata-tabledata">
+
+                                        <a class="" href="/alluser-view/alluser-view.html"><i class="fa-solid fa-eye alluserdata-view "></i></a> <br>
+
+
+                                    </td>
+                                    <td class="alluserdata-tabledata">
+
+                                        <a class="" href="/alluser-edit/edit.html"><i
+                                                class="fa-solid fa-pen-to-square alluserdata-edit"></i></a> <br>
+
+
+                                    </td>
+                                    <td class="alluserdata-tabledata">
+
+                                        <!-- Button trigger modal -->
+
+                                        <a class="" href="" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                class="fa-solid fa-trash-can alluserdata-delete"></i></a>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="0"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+
+                                                    <div class="modal-body">
+                                                        <h5> Are you sure,you want to delete this user?</h5> <br>
+                                                        <div class="alluserdata-modal-body">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-danger">Delete</button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </td>
+
+                                </tr>
+                               
 
 
 

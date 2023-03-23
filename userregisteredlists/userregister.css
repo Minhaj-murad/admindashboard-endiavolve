@@ -286,3 +286,24 @@ body {
         overflow: auto;
     }
 }
+
+.alluserdata-submit-btn {   
+    background: none;
+    color: white;
+    padding: 5px 20px;
+    background-color: #3742fa;
+    border: 1px solid #3742fa;
+    border-radius: 0;
+}
+
+.alluserdata-submit-btn:hover {
+    border: 1px solid #ffa502;
+    color: #fff;
+    background-color: #ffa502;
+
+   
+}
+.alluserdata-submit-btn:active {
+    color: #fff;
+    background-color: #3742fa;
+}

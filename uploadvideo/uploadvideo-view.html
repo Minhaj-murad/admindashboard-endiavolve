@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="upload-video-viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- Bootstrap live Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- Font-Awesome -->
+    <script src="https://kit.fontawesome.com/9d24440128.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="/admindashboard/admindash.css">
+    <link rel="stylesheet" href="/uploadvideo/uploadvideo-view.css">
+
+
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+    <!-- fontawesome cdn link (6.2.1) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand navbar-light sticky-top d-flex justify-content-between  py-0">
+        <a href="#" class="me-4">
+
+            <img src="../images/logo.png" style="height: 40px; " alt="">
+        </a>
+        <a href="#" class="admindash-sidebar-toggler flex-shrink-0" id="admindash-navlink-bar">
+            <i class="fa fa-bars" id="admindash-navlink-bar-text"></i>
+        </a>
+        <form class="d-none d-md-flex ms-4">
+            <input class="form-control border-0" type="search" placeholder="Search">
+        </form>
+        <div class="navbar-nav align-items-center ms-auto">
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                    <i class="fa fa-envelope" id="admindash-navlink-message"></i>
+
+                </a>
+                <div class="dropdown-menu dropdown-menu-end ">
+                    <ul class="navbar-ul">
+                        <li class="dropdown-item">Karim sends you a message</li>
+                        <li class="dropdown-item">Riha sends you a message</li>
+                        <li class="dropdown-item">Sahed sends you a message</li>
+                        <li class="dropdown-item">Hasan sends you a message</li>
+                        <li class="dropdown-item" style="border: none;">Sahed sends you a message</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                    <i class="fa fa-bell " id="admindash-navlink-notification"></i>
+
+                </a>
+                <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+
+                    <ul class="navbar-ul">
+                        <li class="dropdown-item">
+                            <h6 class="fw-normal mb-0 upload-video-view-details-data-query">Profile updated</h6>
+                            <small>15 minutes ago</small>
+                        </li>
+                        <li class="dropdown-item">
+                            <h6 class="fw-normal mb-0 upload-video-view-details-data-query">New user added</h6>
+                            <small>15 minutes ago</small>
+                        </li>
+                        <li class="dropdown-item " style="border: none;">
+                            <h6 class="fw-normal mb-0 upload-video-view-details-data-query">Password changed</h6>
+                            <small>15 minutes ago</small>
+                        </li>
+
+                    </ul>
+
+
+
+                </div>
+            </div>
+            <div class="nav-item dropdown ms-4">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                    <img class="rounded-circle " src="/images/img1.jpg" alt="" style="width: 40px; height: 40px;">
+                    <span class="d-none d-lg-inline-flex" id="admindash-user-name">Hasan Talukder</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+
+                    <ul class="navbar-ul-profile p-2">
+                        <div class="admindash-nav-user-profile d-flex align-items-center justify-content-center pb-3">
+                            <img src="/images/img1.jpg" style="height: 60px; width: 60px; border-radius: 50%;" alt="">
+                            <div class="ms-4">
+                                <h6 class="admindash-user-name1">Hasan Talukder</h6>
+                                <p class="mb-0 upload-video-view-details-data-query">Talukder@gmail.com</p>
+                            </div>
+
+                        </div>
+                        <li class="dropdown-item d-flex justify-content-between align-items-center mt-2 "
+                            style="border: none;">
+                            <div class="dropdown-item-data d-flex justify-content-center align-items-center ">
+                                <i class="fa-solid fa-user admindash-user-icon" id=""></i>
+                                <span class="ms-4 admindash-user-text ">Edit Profile</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-chevron-right "></i>
+                            </div>
+                        </li>
+                        <li class="dropdown-item d-flex justify-content-between align-items-center mt-2 "
+                            style="border: none;">
+                            <div class="dropdown-item-data d-flex justify-content-center align-items-center ">
+                                <i class="fa-solid fa-gear admindash-user-icon"></i>
+                                <span class="ms-4 admindash-user-text">Setting and Privacy</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </li>
+                        <li class="dropdown-item d-flex justify-content-between align-items-center mt-2 "
+                            style="border: none;">
+                            <div class="dropdown-item-data d-flex justify-content-center align-items-center ">
+                                <i class="fa-solid fa-question admindash-user-icon"></i>
+                                <span class="ms-4 admindash-user-text">Help and Support</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </li>
+                        <li class="dropdown-item d-flex justify-content-between align-items-center mt-2 "
+                            style="border: none;">
+                            <div class="dropdown-item-data d-flex justify-content-center align-items-center ">
+                                <i class="fa-solid fa-moon admindash-user-icon"></i>
+                                <span class="ms-4 admindash-user-text">Display and Accessibility</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </li>
+                        <li class="dropdown-item d-flex justify-content-between align-items-center mt-2 "
+                            style="border: none;">
+                            <div class="dropdown-item-data d-flex justify-content-center align-items-center ">
+                                <i class="fa-solid fa-right-to-bracket admindash-user-icon"></i>
+                                <span class="ms-4 admindash-user-text">Logout</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div>
+        <!-- admindash-sidebar Start -->
+    <div id="admindash-sidebar" class="admindash-sidebar">
+        <nav class="navbar bg-light navbar-light">
+
+            <div class="navbar-nav w-100">
+                <a href="/admindashboard/admindash.html" class="nav-item nav-link "><i class="fa fa-tachometer-alt me-2 " style="
+                    background: none" style="
+                    background: none"></i><span class="admindash-user-text"> Dashboard</span></a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                            class="fa fa-laptop me-2 " style="
+                    background: none"></i><span class="admindash-user-text"> User Panel</span></a>
+                    <div class="dropdown-menu bg-transparent border-0" style="
+                    padding-block: 0;
+                    margin: 0;">
+                       
+                        <a href="/userregisteredlists/userregister.html" class="dropdown-item">All Users</a>
+                        <a href="/Upload-Video-main/uploadvideos.html" class="dropdown-item">Upload Video</a>
+                        <a href="/upload-video/upload-video.html" class="dropdown-item">Subject Lists</a>
+                        <a href="/Chapterlist/chapterlist.html" class="dropdown-item">Chapter Lists</a>
+                       
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                            class="fa fa-keyboard me-2 " style="
+                    background: none"></i><span class="admindash-user-text"> Landing Page</span></a>
+                    <div class="dropdown-menu bg-transparent border-0" style="
+                    padding-block: 0;
+                    margin: 0;">
+                     
+                        <a href="/blogs/blogs.html" class="dropdown-item">Blogs</a>
+                        <a href="/career/career.html" class="dropdown-item">Career Lists</a>
+                        <a href="/contacts/contacts.html" class="dropdown-item">Contact Us Lists</a>
+                        
+                    </div>
+                </div>
+                
+              
+            </div>
+        </nav>
+    </div>
+    <!-- admindash-sidebar End -->
+
+
+
+
+
+
+        <!-- Content Start -->
+        <div class="content">
+
+            <section>
+                <div class="container-fluid upload-video-view-page">
+
+
+
+
+
+
+                    <div class="upload-video-view ">
+                        <div class="upload-video-view-heading ">
+                            <div>
+                                <h4 class="upload-video-view-heading-text" style="margin: 0;">Video Details</h4>
+                            </div>
+
+
+
+                        </div>
+                        <div class="upload-video-view-form">
+
+                            <div class=" pt-3">
+                           
+                                <div>
+
+                                    <div class="upload-video-view-details-container">
+                                        <div class="row upload-video-view-details-data ">
+                                            <div class="col-sm-3 col-md-5">
+                                                <h6 class="mb-0 upload-video-view-details-data-query">Video Name</h6>
+                                            </div>
+
+                                            <div class="col-sm-9 col-md-6 ">
+                                               Video of Chapter 1
+                                            </div>
+                                        </div>
+                                        <div class="row upload-video-view-details-data ">
+                                            <div class="col-sm-3 col-md-5">
+                                                <h6 class="mb-0 upload-video-view-details-data-query">Video Image</h6>
+                                            </div>
+
+                                            <div class="col-sm-9 col-md-6 ">
+                                                ComputerScience.jpg
+                                            </div>
+                                        </div>
+                                     
+                                        <div class="row upload-video-view-details-data ">
+                                            <div class="col-sm-3 col-md-5">
+                                                <h6 class="mb-0 upload-video-view-details-data-query">Video Description</h6>
+                                            </div>
+
+                                            <div class="col-sm-9 col-md-6 ">
+                                               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel culpa natus perspiciatis corrupti aspernatur maxime ab fugiat eius! Fuga distinctio ad nemo incidunt fugiat eveniet amet quasi ut ducimus possimus.
+                                            </div>
+                                        </div>
+                                            <div class="row upload-video-view-details-data ">
+                                                <div class="col-sm-3 col-md-5">
+                                                    <h6 class="mb-0 upload-video-view-details-data-query">Teacher Name</h6>
+                                                </div>
+    
+                                                <div class="col-sm-9 col-md-6 ">
+                                                   Michel Edison
+                                                </div>
+                                            </div>
+    
+                                            <div class="row upload-video-view-details-data ">
+                                                <div class="col-sm-3 col-md-5">
+                                                    <h6 class="mb-0 upload-video-view-details-data-query">Subject Name</h6>
+                                                </div>
+    
+                                                <div class="col-sm-9 col-md-6 ">
+                                                  Computer Basics
+                                                </div>
+                                            </div>
+    
+                                            <div class="row upload-video-view-details-data ">
+                                                <div class="col-sm-3 col-md-5">
+                                                    <h6 class="mb-0 upload-video-view-details-data-query">Chapter Name</h6>
+                                                </div>
+    
+                                                <div class="col-sm-9 col-md-6 ">
+                                                 Chapter 1 Name
+                                                </div>
+                                            </div>
+    
+                                      
+    
+    
+                                       
+                                        
+
+
+                                    </div>
+
+
+
+
+
+
+
+
+                                </div>
+
+
+                            </div>
+                         
+                            <div>
+
+                                <div class="d-flex justify-content-center mt-3">
+                                    <a href="/uploadvideo/uploadvideo-edit.html"> <button
+                                            class="btn  btn-outline-success me-2">Edit</button></a>
+
+                                    <a class="" href="" data-bs-toggle="modal" data-bs-target="#exampleModal"><button
+                                            class="btn  btn-outline-danger me-2">Delete</button> </a>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="0"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+
+                                                <div class="modal-body">
+                                                    <h5> Are you sure,you want to delete this user?</h5> <br>
+                                                    <div class="d-flex justify-content-end">
+                                                        <button type="button" class="btn btn-secondary me-2"
+                                                            data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-danger">Delete</button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                   
+
+
+                                    <a href="/Upload-Video-main/uploadvideos.html"><button
+                                            class="btn btn-outline-secondary">Cancel</button></a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+            </section>
+            <!-- End User Data -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+        <!-- Content ends -->
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <!-- Template Javascript -->
+    <script>
+        (function ($) {
+            "use strict";
+
+
+            // admindash-sidebar Toggler
+            $('.admindash-sidebar-toggler').click(function () {
+                $('.admindash-sidebar, .content').toggleClass("open");
+                return false;
+            });
+
+
+
+
+
+        })(jQuery);
+
+    </script>
+
+
+
+</body>
+
+</html>

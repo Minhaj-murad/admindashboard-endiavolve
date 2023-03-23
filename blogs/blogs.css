@@ -287,3 +287,8 @@ body {
     }
 }
 
+.hidden { display: none;}
+.readmore{
+    text-decoration: none;
+    cursor: auto;
+}

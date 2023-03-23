@@ -74,7 +74,7 @@
 --------------------------------------------------------------*/
 .admindash-sidebar {
     position: fixed;
-    top: 60px;
+    top: 48px;
     left: 0;
     bottom: 0;
     width: 300px;
@@ -426,7 +426,7 @@ a {
     z-index: 1000;
     display: none;
     min-width: 10rem;
-    padding: .5rem 0;
+    padding: 0;
     margin: 0;
     font-size: 1rem;
     color: #757575;

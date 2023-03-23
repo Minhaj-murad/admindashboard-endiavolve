@@ -28,7 +28,7 @@ body {
 }
 
 .contactlists-td{
-   
+    
     margin: auto 
 }
 .modal-add {
@@ -85,6 +85,7 @@ body {
     text-align: center;
   }
 .contactlists-tabledata{
+    font-size: 13px;
     text-align: center;
 }
 
@@ -287,3 +288,11 @@ body {
     }
 }
 
+.contactlist-tabledata-messages{
+    width: 200px;
+}
+.hidden { display: none;}
+.readmore{
+    text-decoration: none;
+    cursor: auto;
+}
