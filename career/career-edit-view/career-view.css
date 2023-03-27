@@ -68,3 +68,20 @@
     background-color: #025242;
     border-radius: 0;
 }
+
+.edit-form-input-file{
+    border: 1px solid gray;
+   border-radius: 50px;
+   padding: 1px;
+   font-size: 15px;
+    
+}
+.edit-form-input-file::-webkit-file-upload-button{
+    background-image: linear-gradient(45deg,#01772f, rgb(4, 85, 59));
+    color: #fff;
+    padding: 5px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-right: 10px;
+}

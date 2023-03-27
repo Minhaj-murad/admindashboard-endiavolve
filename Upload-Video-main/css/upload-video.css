@@ -13,6 +13,9 @@ body {
     background-color: #dfe6e9;
 } */
 
+.upload-video{
+    background-color: #fff;
+}
 .uploadvideos {
     display: flex;
     overflow: auto;
@@ -20,6 +23,7 @@ body {
     flex-direction: column;
     justify-content: center;
     border: 1px solid rgb(12, 10, 10);
+    
 }
 
 

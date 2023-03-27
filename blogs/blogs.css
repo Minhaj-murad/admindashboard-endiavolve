@@ -78,6 +78,7 @@ body {
     flex-direction: column;
     justify-content: center;
     border: 1px solid gray;
+    background-color: #fff;
 }
 
 .bloglists-tabledata-head{
