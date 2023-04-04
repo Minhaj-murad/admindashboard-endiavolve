@@ -19,12 +19,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-inline: 20px;
-    color: #fff;
-    background-color: #213832;
+    border-bottom: 1px solid gray;
+  
 }
 
 .chapterlists-heading-text{
-    color: #fff;
+    
 }
 
 .chapterlists-td{
@@ -47,18 +47,17 @@ body {
 }
 
 .chapterlists-user-btn {
-  
-    background: none;
+    background-color: #3742fa !important;
     color: white;
-    background-color: #3742fa;
-    border: 1px solid #41464b;
+   
+    border: 1px solid #3742fa;
     border-radius: 0;
 }
 
 .chapterlists-user-btn:hover {
-    border: 1px solid #41464b;
+    border: 1px solid #ffa502;
     color: #fff;
-    background-color: #ffa502;
+    background-color: #ffa502 !important;
 
    
 }

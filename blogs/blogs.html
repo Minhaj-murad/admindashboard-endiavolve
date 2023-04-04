@@ -238,35 +238,65 @@
 
 
 
-            <div class="bloglists ">
-                <div class="bloglists-heading ">
+            <main class="table ">
+                <div class="table__header">
                     <div>
-                        <h4 class="bloglists-heading-text">Blog Lists</h4>
+                        <h4 class="table-heading-text">Blog Lists</h4>
                     </div>
                     <div class="bloglists-add">
                         <button type="button" class="btn bloglists-user-btn" data-bs-toggle="modal"
-                            data-bs-target="#userModal"> <i class="fa-solid fa-plus"
-                                id="bloglists-user-btn-plus"></i> Add Blog</button>
+                            data-bs-target="#userModal">  Add Blog <i class="fa-solid fa-plus"
+                            id="bloglists-user-btn-plus"></i></button>
                     </div>
                 </div>
-             
 
-                <table id="bloglists-table" class="table table-striped table-hover">
+
+               <div class="table__body">
+                <div class="table_body_header mt-2">
+                    <div>
+
+                    </div>
+                    <div class="allusers-input-field" style="  background-color: rgba(144, 141, 141, 0.333);">
+                        <input type="search" class="alluserdata-input-group-search" placeholder="Search Data..."
+                            style="border: none; outline: none; padding-inline: 20px">
+                        <img src="/images/search.png" alt="" style="height: 15px; width: 15px;">
+                    </div>
+                    <div class="export__file">
+                        <label for="export-file" class="export__file-btn" title="Export File"></label>
+                        <input type="checkbox" id="export-file">
+                        <div class="export__file-options">
+                            <label>Export As &nbsp; &#10140;</label>
+                            <label for="export-file" id="toPDF">PDF <img src="/images/pdf.png"
+                                    alt=""></label>
+                            <label for="export-file" id="toJSON">JSON <img src="images/json.png"
+                                    alt=""></label>
+                            <label for="export-file" id="toCSV">CSV <img src="images/csv.png"
+                                    alt=""></label>
+                            <label for="export-file" id="toEXCEL">EXCEL <img src="images/excel.png"
+                                    alt=""></label>
+                        </div>
+                    </div>
+                </div>
+
+                <table >
                     <thead class="bloglists-thead">
                         <tr class="bloglists-tr">
-                            <th scope="col" class="bloglists-tabledata-head">Id</th>
-                            <th scope="col" class="bloglists-tabledata-head">Images</th>
-                            <th scope="col" class="bloglists-tabledata-head">Full Name</th>
-                            <th scope="col" class="bloglists-tabledata-head">Date of Publish</th>
-                            <th scope="col" class="bloglists-tabledata-head">Title</th>
-                            <th scope="col" class="bloglists-tabledata-head">Content</th>
+                            <th scope="col" class="bloglists-tabledata-head">Id <span
+                                            class="icon-arrow">&UpArrow;</span></th>
+                            <th scope="col" class="bloglists-tabledata-head">Images <span
+                                            class="icon-arrow">&UpArrow;</span></th>
+                            <th scope="col" class="bloglists-tabledata-head">Full Name <span
+                                            class="icon-arrow">&UpArrow;</span></th>
+                            <th scope="col" class="bloglists-tabledata-head">Date of Publish <span
+                                            class="icon-arrow">&UpArrow;</span></th>
+                            <th scope="col" class="bloglists-tabledata-head">Title <span
+                                            class="icon-arrow">&UpArrow;</span></th>
+                            <th scope="col" class="bloglists-tabledata-head">Content <span
+                                            class="icon-arrow">&UpArrow;</span></th>
                           
-                            <th scope="col" class="bloglists-tabledata-head">View
+                            <th scope="col" class="bloglists-tabledata-head">Actions
                             </th>
-                            <th scope="col" class="bloglists-tabledata-head">Edit
-                            </th>
-                            <th scope="col" class="bloglists-tabledata-head">Delete
-                            </th>
+                          
 
                         </tr>
                     </thead>
@@ -281,21 +311,19 @@
                                 <td class="bloglists-tabledata">Zayn Malik</td>
                             <td class="bloglists-tabledata">13/03/2023</td>
                             <td class="bloglists-tabledata">All about Electronics</td>
-                            <td class="bloglists-tabledata-meassage" style="width: 400px;"><p class="bloglists-tabledata-content">Now I have created a count area using the following codes. Whenever you input a character, those characters will continue to be counted. Under normal circumstances, it cannot be seen. This can be seen after using JavaScript.</p></td>
+                            <td class="bloglists-tabledata-meassage" style="width: 300px;"><p class="bloglists-tabledata-content">Now I have created a count area using the following codes. Whenever you input a character, those characters will continue to be counted. Under normal circumstances, it cannot be seen. This can be seen after using JavaScript.</p></td>
                            
                             <td class="bloglists-tabledata">
 
-                                <a class="" href="/blogs/blogs-edit-view/blogs-view.html"><i class="fa-solid fa-eye bloglists-view"></i></a> <br>
+                                <a class="" href="/blogs/blogs-edit-view/blogs-view.html"><i class="fa-solid fa-eye bloglists-view"></i></a> 
 
 
-                            </td>
-                            <td class="bloglists-tabledata">
+                           
 
-                                <a class="" href="/blogs/blogs-edit-view/blogs-edit.html"><i class="fa-solid fa-pen-to-square bloglists-edit"></i></a> <br>
+                                <a class="" href="/blogs/blogs-edit-view/blogs-edit.html"><i class="fa-solid fa-pen-to-square bloglists-edit"></i></a> 
 
 
-                            </td>
-                            <td class="bloglists-tabledata">
+                          
 
                                 <!-- Button trigger modal -->
 
@@ -309,7 +337,7 @@
                                         <div class="modal-content">
 
                                             <div class="modal-body">
-                                                <h5> Are you sure,you want to delete this user?</h5> <br>
+                                                <h5> Are you sure,you want to delete this user?</h5> 
                                                 <div class="alluserdata-modal-body">
                                                     <button type="button" class="btn btn-secondary"
                                                         data-bs-dismiss="modal">Close</button>
@@ -336,21 +364,19 @@
                                 <td class="bloglists-tabledata">Zayn Malik</td>
                             <td class="bloglists-tabledata">13/03/2023</td>
                             <td class="bloglists-tabledata">All about Electronics</td>
-                            <td class="bloglists-tabledata-meassage" style="width: 400px;"><p class="bloglists-tabledata-content">Now I have created a count area using the following codes. Whenever you input a character, those characters will continue to be counted. Under normal circumstances, it cannot be seen. This can be seen after using JavaScript.</p></td>
+                            <td class="bloglists-tabledata-meassage" style="width: 300px;"><p class="bloglists-tabledata-content">Now I have created a count area using the following codes. Whenever you input a character, those characters will continue to be counted. Under normal circumstances, it cannot be seen. This can be seen after using JavaScript.</p></td>
                            
-                            <td class="bloglists-tabledata">
+                             <td class="bloglists-tabledata">
 
-                                <a class="" href="/blogs/blogs-edit-view/blogs-view.html"><i class="fa-solid fa-eye bloglists-view"></i></a> <br>
-
-
-                            </td>
-                            <td class="bloglists-tabledata">
-
-                                <a class="" href="/blogs/blogs-edit-view/blogs-edit.html"><i class="fa-solid fa-pen-to-square bloglists-edit"></i></a> <br>
+                                <a class="" href="/blogs/blogs-edit-view/blogs-view.html"><i class="fa-solid fa-eye bloglists-view"></i></a> 
 
 
-                            </td>
-                            <td class="bloglists-tabledata">
+                           
+
+                                <a class="" href="/blogs/blogs-edit-view/blogs-edit.html"><i class="fa-solid fa-pen-to-square bloglists-edit"></i></a> 
+
+
+                          
 
                                 <!-- Button trigger modal -->
 
@@ -364,7 +390,7 @@
                                         <div class="modal-content">
 
                                             <div class="modal-body">
-                                                <h5> Are you sure,you want to delete this user?</h5> <br>
+                                                <h5> Are you sure,you want to delete this user?</h5> 
                                                 <div class="alluserdata-modal-body">
                                                     <button type="button" class="btn btn-secondary"
                                                         data-bs-dismiss="modal">Close</button>
@@ -378,7 +404,6 @@
 
 
                             </td>
-
                         </tr>
                       
                         <tr class="bloglists-tr">
@@ -391,21 +416,19 @@
                                 <td class="bloglists-tabledata">Zayn Malik</td>
                             <td class="bloglists-tabledata">13/03/2023</td>
                             <td class="bloglists-tabledata">All about Electronics</td>
-                            <td class="bloglists-tabledata-meassage" style="width: 400px;"><p class="bloglists-tabledata-content">Now I have created a count area using the following codes. Whenever you input a character, those characters will continue to be counted. Under normal circumstances, it cannot be seen. This can be seen after using JavaScript.</p></td>
+                            <td class="bloglists-tabledata-meassage" style="width: 300px;"><p class="bloglists-tabledata-content">Now I have created a count area using the following codes. Whenever you input a character, those characters will continue to be counted. Under normal circumstances, it cannot be seen. This can be seen after using JavaScript.</p></td>
                            
-                            <td class="bloglists-tabledata">
+                             <td class="bloglists-tabledata">
 
-                                <a class="" href="/blogs/blogs-edit-view/blogs-view.html"><i class="fa-solid fa-eye bloglists-view"></i></a> <br>
-
-
-                            </td>
-                            <td class="bloglists-tabledata">
-
-                                <a class="" href="/blogs/blogs-edit-view/blogs-edit.html"><i class="fa-solid fa-pen-to-square bloglists-edit"></i></a> <br>
+                                <a class="" href="/blogs/blogs-edit-view/blogs-view.html"><i class="fa-solid fa-eye bloglists-view"></i></a> 
 
 
-                            </td>
-                            <td class="bloglists-tabledata">
+                           
+
+                                <a class="" href="/blogs/blogs-edit-view/blogs-edit.html"><i class="fa-solid fa-pen-to-square bloglists-edit"></i></a> 
+
+
+                          
 
                                 <!-- Button trigger modal -->
 
@@ -419,7 +442,7 @@
                                         <div class="modal-content">
 
                                             <div class="modal-body">
-                                                <h5> Are you sure,you want to delete this user?</h5> <br>
+                                                <h5> Are you sure,you want to delete this user?</h5> 
                                                 <div class="alluserdata-modal-body">
                                                     <button type="button" class="btn btn-secondary"
                                                         data-bs-dismiss="modal">Close</button>
@@ -433,7 +456,6 @@
 
 
                             </td>
-
                         </tr>
                       
                         <tr class="bloglists-tr">
@@ -446,21 +468,19 @@
                                 <td class="bloglists-tabledata">Zayn Malik</td>
                             <td class="bloglists-tabledata">13/03/2023</td>
                             <td class="bloglists-tabledata">All about Electronics</td>
-                            <td class="bloglists-tabledata-meassage" style="width: 400px;"><p class="bloglists-tabledata-content">Now I have created a count area using the following codes. Whenever you input a character, those characters will continue to be counted. Under normal circumstances, it cannot be seen. This can be seen after using JavaScript.</p></td>
+                            <td class="bloglists-tabledata-meassage" style="width: 300px;"><p class="bloglists-tabledata-content">Now I have created a count area using the following codes. Whenever you input a character, those characters will continue to be counted. Under normal circumstances, it cannot be seen. This can be seen after using JavaScript.</p></td>
                            
-                            <td class="bloglists-tabledata">
+                             <td class="bloglists-tabledata">
 
-                                <a class="" href="/blogs/blogs-edit-view/blogs-view.html"><i class="fa-solid fa-eye bloglists-view"></i></a> <br>
-
-
-                            </td>
-                            <td class="bloglists-tabledata">
-
-                                <a class="" href="/blogs/blogs-edit-view/blogs-edit.html"><i class="fa-solid fa-pen-to-square bloglists-edit"></i></a> <br>
+                                <a class="" href="/blogs/blogs-edit-view/blogs-view.html"><i class="fa-solid fa-eye bloglists-view"></i></a> 
 
 
-                            </td>
-                            <td class="bloglists-tabledata">
+                           
+
+                                <a class="" href="/blogs/blogs-edit-view/blogs-edit.html"><i class="fa-solid fa-pen-to-square bloglists-edit"></i></a> 
+
+
+                          
 
                                 <!-- Button trigger modal -->
 
@@ -474,7 +494,7 @@
                                         <div class="modal-content">
 
                                             <div class="modal-body">
-                                                <h5> Are you sure,you want to delete this user?</h5> <br>
+                                                <h5> Are you sure,you want to delete this user?</h5> 
                                                 <div class="alluserdata-modal-body">
                                                     <button type="button" class="btn btn-secondary"
                                                         data-bs-dismiss="modal">Close</button>
@@ -488,7 +508,6 @@
 
 
                             </td>
-
                         </tr>
                       
                         <tr class="bloglists-tr">
@@ -501,21 +520,19 @@
                                 <td class="bloglists-tabledata">Zayn Malik</td>
                             <td class="bloglists-tabledata">13/03/2023</td>
                             <td class="bloglists-tabledata">All about Electronics</td>
-                            <td class="bloglists-tabledata-meassage" style="width: 400px;"><p class="bloglists-tabledata-content">Now I have created a count area using the following codes. Whenever you input a character, those characters will continue to be counted. Under normal circumstances, it cannot be seen. This can be seen after using JavaScript.</p></td>
+                            <td class="bloglists-tabledata-meassage" style="width: 300px;"><p class="bloglists-tabledata-content">Now I have created a count area using the following codes. Whenever you input a character, those characters will continue to be counted. Under normal circumstances, it cannot be seen. This can be seen after using JavaScript.</p></td>
                            
-                            <td class="bloglists-tabledata">
+                             <td class="bloglists-tabledata">
 
-                                <a class="" href="/blogs/blogs-edit-view/blogs-view.html"><i class="fa-solid fa-eye bloglists-view"></i></a> <br>
-
-
-                            </td>
-                            <td class="bloglists-tabledata">
-
-                                <a class="" href="/blogs/blogs-edit-view/blogs-edit.html"><i class="fa-solid fa-pen-to-square bloglists-edit"></i></a> <br>
+                                <a class="" href="/blogs/blogs-edit-view/blogs-view.html"><i class="fa-solid fa-eye bloglists-view"></i></a> 
 
 
-                            </td>
-                            <td class="bloglists-tabledata">
+                           
+
+                                <a class="" href="/blogs/blogs-edit-view/blogs-edit.html"><i class="fa-solid fa-pen-to-square bloglists-edit"></i></a> 
+
+
+                          
 
                                 <!-- Button trigger modal -->
 
@@ -529,7 +546,7 @@
                                         <div class="modal-content">
 
                                             <div class="modal-body">
-                                                <h5> Are you sure,you want to delete this user?</h5> <br>
+                                                <h5> Are you sure,you want to delete this user?</h5> 
                                                 <div class="alluserdata-modal-body">
                                                     <button type="button" class="btn btn-secondary"
                                                         data-bs-dismiss="modal">Close</button>
@@ -543,7 +560,6 @@
 
 
                             </td>
-
                         </tr>
                       
                         <tr class="bloglists-tr">
@@ -556,21 +572,19 @@
                                 <td class="bloglists-tabledata">Zayn Malik</td>
                             <td class="bloglists-tabledata">13/03/2023</td>
                             <td class="bloglists-tabledata">All about Electronics</td>
-                            <td class="bloglists-tabledata-meassage" style="width: 400px;"><p class="bloglists-tabledata-content">Now I have created a count area using the following codes. Whenever you input a character, those characters will continue to be counted. Under normal circumstances, it cannot be seen. This can be seen after using JavaScript.</p></td>
+                            <td class="bloglists-tabledata-meassage" style="width: 300px;"><p class="bloglists-tabledata-content">Now I have created a count area using the following codes. Whenever you input a character, those characters will continue to be counted. Under normal circumstances, it cannot be seen. This can be seen after using JavaScript.</p></td>
                            
-                            <td class="bloglists-tabledata">
+                             <td class="bloglists-tabledata">
 
-                                <a class="" href="/blogs/blogs-edit-view/blogs-view.html"><i class="fa-solid fa-eye bloglists-view"></i></a> <br>
-
-
-                            </td>
-                            <td class="bloglists-tabledata">
-
-                                <a class="" href="/blogs/blogs-edit-view/blogs-edit.html"><i class="fa-solid fa-pen-to-square bloglists-edit"></i></a> <br>
+                                <a class="" href="/blogs/blogs-edit-view/blogs-view.html"><i class="fa-solid fa-eye bloglists-view"></i></a> 
 
 
-                            </td>
-                            <td class="bloglists-tabledata">
+                           
+
+                                <a class="" href="/blogs/blogs-edit-view/blogs-edit.html"><i class="fa-solid fa-pen-to-square bloglists-edit"></i></a> 
+
+
+                          
 
                                 <!-- Button trigger modal -->
 
@@ -584,7 +598,7 @@
                                         <div class="modal-content">
 
                                             <div class="modal-body">
-                                                <h5> Are you sure,you want to delete this user?</h5> <br>
+                                                <h5> Are you sure,you want to delete this user?</h5> 
                                                 <div class="alluserdata-modal-body">
                                                     <button type="button" class="btn btn-secondary"
                                                         data-bs-dismiss="modal">Close</button>
@@ -598,7 +612,6 @@
 
 
                             </td>
-
                         </tr>
                       
                         <tr class="bloglists-tr">
@@ -611,21 +624,19 @@
                                 <td class="bloglists-tabledata">Zayn Malik</td>
                             <td class="bloglists-tabledata">13/03/2023</td>
                             <td class="bloglists-tabledata">All about Electronics</td>
-                            <td class="bloglists-tabledata-meassage" style="width: 400px;"><p class="bloglists-tabledata-content">Now I have created a count area using the following codes. Whenever you input a character, those characters will continue to be counted. Under normal circumstances, it cannot be seen. This can be seen after using JavaScript.</p></td>
+                            <td class="bloglists-tabledata-meassage" style="width: 300px;"><p class="bloglists-tabledata-content">Now I have created a count area using the following codes. Whenever you input a character, those characters will continue to be counted. Under normal circumstances, it cannot be seen. This can be seen after using JavaScript.</p></td>
                            
-                            <td class="bloglists-tabledata">
+                             <td class="bloglists-tabledata">
 
-                                <a class="" href="/blogs/blogs-edit-view/blogs-view.html"><i class="fa-solid fa-eye bloglists-view"></i></a> <br>
-
-
-                            </td>
-                            <td class="bloglists-tabledata">
-
-                                <a class="" href="/blogs/blogs-edit-view/blogs-edit.html"><i class="fa-solid fa-pen-to-square bloglists-edit"></i></a> <br>
+                                <a class="" href="/blogs/blogs-edit-view/blogs-view.html"><i class="fa-solid fa-eye bloglists-view"></i></a> 
 
 
-                            </td>
-                            <td class="bloglists-tabledata">
+                           
+
+                                <a class="" href="/blogs/blogs-edit-view/blogs-edit.html"><i class="fa-solid fa-pen-to-square bloglists-edit"></i></a> 
+
+
+                          
 
                                 <!-- Button trigger modal -->
 
@@ -639,7 +650,7 @@
                                         <div class="modal-content">
 
                                             <div class="modal-body">
-                                                <h5> Are you sure,you want to delete this user?</h5> <br>
+                                                <h5> Are you sure,you want to delete this user?</h5> 
                                                 <div class="alluserdata-modal-body">
                                                     <button type="button" class="btn btn-secondary"
                                                         data-bs-dismiss="modal">Close</button>
@@ -653,7 +664,6 @@
 
 
                             </td>
-
                         </tr>
                       
                         <tr class="bloglists-tr">
@@ -666,21 +676,19 @@
                                 <td class="bloglists-tabledata">Zayn Malik</td>
                             <td class="bloglists-tabledata">13/03/2023</td>
                             <td class="bloglists-tabledata">All about Electronics</td>
-                            <td class="bloglists-tabledata-meassage" style="width: 400px;"><p class="bloglists-tabledata-content">Now I have created a count area using the following codes. Whenever you input a character, those characters will continue to be counted. Under normal circumstances, it cannot be seen. This can be seen after using JavaScript.</p></td>
+                            <td class="bloglists-tabledata-meassage" style="width: 300px;"><p class="bloglists-tabledata-content">Now I have created a count area using the following codes. Whenever you input a character, those characters will continue to be counted. Under normal circumstances, it cannot be seen. This can be seen after using JavaScript.</p></td>
                            
-                            <td class="bloglists-tabledata">
+                             <td class="bloglists-tabledata">
 
-                                <a class="" href="/blogs/blogs-edit-view/blogs-view.html"><i class="fa-solid fa-eye bloglists-view"></i></a> <br>
-
-
-                            </td>
-                            <td class="bloglists-tabledata">
-
-                                <a class="" href="/blogs/blogs-edit-view/blogs-edit.html"><i class="fa-solid fa-pen-to-square bloglists-edit"></i></a> <br>
+                                <a class="" href="/blogs/blogs-edit-view/blogs-view.html"><i class="fa-solid fa-eye bloglists-view"></i></a> 
 
 
-                            </td>
-                            <td class="bloglists-tabledata">
+                           
+
+                                <a class="" href="/blogs/blogs-edit-view/blogs-edit.html"><i class="fa-solid fa-pen-to-square bloglists-edit"></i></a> 
+
+
+                          
 
                                 <!-- Button trigger modal -->
 
@@ -694,7 +702,7 @@
                                         <div class="modal-content">
 
                                             <div class="modal-body">
-                                                <h5> Are you sure,you want to delete this user?</h5> <br>
+                                                <h5> Are you sure,you want to delete this user?</h5> 
                                                 <div class="alluserdata-modal-body">
                                                     <button type="button" class="btn btn-secondary"
                                                         data-bs-dismiss="modal">Close</button>
@@ -708,7 +716,6 @@
 
 
                             </td>
-
                         </tr>
                       
                         <tr class="bloglists-tr">
@@ -721,21 +728,19 @@
                                 <td class="bloglists-tabledata">Zayn Malik</td>
                             <td class="bloglists-tabledata">13/03/2023</td>
                             <td class="bloglists-tabledata">All about Electronics</td>
-                            <td class="bloglists-tabledata-meassage" style="width: 400px;"><p class="bloglists-tabledata-content">Now I have created a count area using the following codes. Whenever you input a character, those characters will continue to be counted. Under normal circumstances, it cannot be seen. This can be seen after using JavaScript.</p></td>
+                            <td class="bloglists-tabledata-meassage" style="width: 300px;"><p class="bloglists-tabledata-content">Now I have created a count area using the following codes. Whenever you input a character, those characters will continue to be counted. Under normal circumstances, it cannot be seen. This can be seen after using JavaScript.</p></td>
                            
-                            <td class="bloglists-tabledata">
+                             <td class="bloglists-tabledata">
 
-                                <a class="" href="/blogs/blogs-edit-view/blogs-view.html"><i class="fa-solid fa-eye bloglists-view"></i></a> <br>
-
-
-                            </td>
-                            <td class="bloglists-tabledata">
-
-                                <a class="" href="/blogs/blogs-edit-view/blogs-edit.html"><i class="fa-solid fa-pen-to-square bloglists-edit"></i></a> <br>
+                                <a class="" href="/blogs/blogs-edit-view/blogs-view.html"><i class="fa-solid fa-eye bloglists-view"></i></a> 
 
 
-                            </td>
-                            <td class="bloglists-tabledata">
+                           
+
+                                <a class="" href="/blogs/blogs-edit-view/blogs-edit.html"><i class="fa-solid fa-pen-to-square bloglists-edit"></i></a> 
+
+
+                          
 
                                 <!-- Button trigger modal -->
 
@@ -749,7 +754,7 @@
                                         <div class="modal-content">
 
                                             <div class="modal-body">
-                                                <h5> Are you sure,you want to delete this user?</h5> <br>
+                                                <h5> Are you sure,you want to delete this user?</h5> 
                                                 <div class="alluserdata-modal-body">
                                                     <button type="button" class="btn btn-secondary"
                                                         data-bs-dismiss="modal">Close</button>
@@ -763,7 +768,6 @@
 
 
                             </td>
-
                         </tr>
                       
                         <tr class="bloglists-tr">
@@ -776,21 +780,19 @@
                                 <td class="bloglists-tabledata">Zayn Malik</td>
                             <td class="bloglists-tabledata">13/03/2023</td>
                             <td class="bloglists-tabledata">All about Electronics</td>
-                            <td class="bloglists-tabledata-meassage" style="width: 400px;"><p class="bloglists-tabledata-content">Now I have created a count area using the following codes. Whenever you input a character, those characters will continue to be counted. Under normal circumstances, it cannot be seen. This can be seen after using JavaScript.</p></td>
+                            <td class="bloglists-tabledata-meassage" style="width: 300px;"><p class="bloglists-tabledata-content">Now I have created a count area using the following codes. Whenever you input a character, those characters will continue to be counted. Under normal circumstances, it cannot be seen. This can be seen after using JavaScript.</p></td>
                            
-                            <td class="bloglists-tabledata">
+                             <td class="bloglists-tabledata">
 
-                                <a class="" href="/blogs/blogs-edit-view/blogs-view.html"><i class="fa-solid fa-eye bloglists-view"></i></a> <br>
-
-
-                            </td>
-                            <td class="bloglists-tabledata">
-
-                                <a class="" href="/blogs/blogs-edit-view/blogs-edit.html"><i class="fa-solid fa-pen-to-square bloglists-edit"></i></a> <br>
+                                <a class="" href="/blogs/blogs-edit-view/blogs-view.html"><i class="fa-solid fa-eye bloglists-view"></i></a> 
 
 
-                            </td>
-                            <td class="bloglists-tabledata">
+                           
+
+                                <a class="" href="/blogs/blogs-edit-view/blogs-edit.html"><i class="fa-solid fa-pen-to-square bloglists-edit"></i></a> 
+
+
+                          
 
                                 <!-- Button trigger modal -->
 
@@ -804,7 +806,7 @@
                                         <div class="modal-content">
 
                                             <div class="modal-body">
-                                                <h5> Are you sure,you want to delete this user?</h5> <br>
+                                                <h5> Are you sure,you want to delete this user?</h5> 
                                                 <div class="alluserdata-modal-body">
                                                     <button type="button" class="btn btn-secondary"
                                                         data-bs-dismiss="modal">Close</button>
@@ -818,7 +820,6 @@
 
 
                             </td>
-
                         </tr>
                       
                       
@@ -839,7 +840,8 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+               </div>
+            </main>
 
 
 
@@ -1026,7 +1028,8 @@
 })
        
    </script>
-
+ 
+ <script src="/js/alltable.js"></script>
 </body>
 
 </html>

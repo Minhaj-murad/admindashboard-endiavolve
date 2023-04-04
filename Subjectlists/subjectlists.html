@@ -235,19 +235,47 @@
 
 
 
-                    <div class="subjectlists">
-                        <div class="subjectlists-heading">
+                    <main class="table">
+                        <div class="table__header">
                             <div>
-                                <h4 class="subjectlists-heading-text">Subject Lists</h4>
+                                <h4 class="table-heading-text">Subject Lists</h4>
                             </div>
                             <div class="subjectlists-add">
                                 <button type="button" class="btn subjectlists-user-btn" data-bs-toggle="modal"
-                                    data-bs-target="#userModal"> <i class="fa-solid fa-plus"
-                                        id="subjectlists-user-btn-plus"></i> Add Subject</button>
+                                    data-bs-target="#userModal">  Add Subject <i class="fa-solid fa-plus"
+                                    id="subjectlists-user-btn-plus"></i></button>
+                            </div>
+                        </div>
+
+
+                       <div class="table__body">
+                        <div class="table_body_header mt-2">
+                            <div>
+
+                            </div>
+                            <div class="allusers-input-field" style="  background-color: rgba(144, 141, 141, 0.333);">
+                                <input type="search" class="alluserdata-input-group-search" placeholder="Search Data..."
+                                    style="border: none; outline: none; padding-inline: 20px">
+                                <img src="/images/search.png" alt="" style="height: 15px; width: 15px;">
+                            </div>
+                            <div class="export__file">
+                                <label for="export-file" class="export__file-btn" title="Export File"></label>
+                                <input type="checkbox" id="export-file">
+                                <div class="export__file-options">
+                                    <label>Export As &nbsp; &#10140;</label>
+                                    <label for="export-file" id="toPDF">PDF <img src="/images/pdf.png"
+                                            alt=""></label>
+                                    <label for="export-file" id="toJSON">JSON <img src="images/json.png"
+                                            alt=""></label>
+                                    <label for="export-file" id="toCSV">CSV <img src="images/csv.png"
+                                            alt=""></label>
+                                    <label for="export-file" id="toEXCEL">EXCEL <img src="images/excel.png"
+                                            alt=""></label>
+                                </div>
                             </div>
                         </div>
                         <form action="" method="post">
-                            <div class="row m-4 justify-content-center g-3">
+                            <div class="row mb-4 justify-content-center g-3 ms-5">
                                 <div class=" col-12 col-md-4 col-lg-3 col-xl-2">
                                     <select name="" id="" class="form-select playlist-select-subject">
                                         <option value="" selected disabled>Select Semester</option>
@@ -286,22 +314,24 @@
                             </div>
                         </form>
 
-                        <table id="subjectlists-table" class="table table-striped table-hover">
+                        <table>
                             <thead class="subjectlists-thead">
                                 <tr class="subjectlists-tr">
-                                    <th scope="col" class="subjectlists-tabledata-head">Id</th>
-                                    <th scope="col" class="subjectlists-tabledata-head">Image</th>
-                                    <th scope="col" class="subjectlists-tabledata-head">Chapter Name</th>
-                                    <th scope="col" class="subjectlists-tabledata-head">Semester</th>
-                                    <th scope="col" class="subjectlists-tabledata-head">Course</th>
-                                    <th scope="col" class="subjectlists-tabledata-head">Branch</th>
-                                    <th scope="col" class="subjectlists-tabledata-head">View
+                                    <th scope="col" class="subjectlists-tabledata-head">Id <span
+                                        class="icon-arrow">&UpArrow;</span></th>
+                                    <th scope="col" class="subjectlists-tabledata-head">Image </th>
+                                    <th scope="col" class="subjectlists-tabledata-head">Chapter Name <span
+                                        class="icon-arrow">&UpArrow;</span></th>
+                                    <th scope="col" class="subjectlists-tabledata-head">Semester <span
+                                        class="icon-arrow">&UpArrow;</span></th>
+                                    <th scope="col" class="subjectlists-tabledata-head">Course <span
+                                        class="icon-arrow">&UpArrow;</span></th>
+                                    <th scope="col" class="subjectlists-tabledata-head">Branch <span
+                                        class="icon-arrow">&UpArrow;</span></th>
+                                    <th scope="col" class="subjectlists-tabledata-head">Actions
                                     </th>
-                                    <th scope="col" class="subjectlists-tabledata-head">Edit
-                                    </th>
-                                    <th scope="col" class="subjectlists-tabledata-head">Delete
-                                    </th>
-
+                                  
+                        
                                 </tr>
                             </thead>
                             <tbody>
@@ -315,47 +345,43 @@
                                     <td class="subjectlists-tabledata">Btech</td>
                                     <td class="subjectlists-tabledata">Computer Science Engineering</td>
                                     <td class="subjectlists-tabledata">
-
-                                        <a class="" href="/subjectlist-view/subjectlist-view.html"><i class="fa-solid fa-eye subjectlists-view"></i></a> <br>
-
-
-                                    </td>
-                                    <td class="subjectlists-tabledata">
-
+                        
+                                        <a class="" href="/subjectlist-view/subjectlist-view.html"><i class="fa-solid fa-eye subjectlists-view"></i></a>
+                        
+                        
+                        
                                         <a class="" href="/subjectlist-edit/subjectlist-edit.html"><i
-                                                class="fa-solid fa-pen-to-square subjectlists-edit"></i></a> <br>
-
-
-                                    </td>
-                                    <td class="subjectlists-tabledata">
-
+                                                class="fa-solid fa-pen-to-square subjectlists-edit"></i></a>
+                        
+                        
+                                 
                                         <!-- Button trigger modal -->
-
+                        
                                         <a class="" href="" data-bs-toggle="modal"
                                             data-bs-target="#exampleModal"><i class="fa-solid fa-trash-can subjectlists-delete"></i></a>
-
+                        
                                         <!-- Modal -->
                                         <div class="modal fade" id="exampleModal" tabindex="0"
                                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content">
-
+                        
                                                     <div class="modal-body">
-                                                        <h5> Are you sure,you want to delete this user?</h5> <br>
+                                                        <h5> Are you sure,you want to delete this user?</h5>
                                                         <div class="alluserdata-modal-body">
                                                             <button type="button" class="btn btn-secondary"
                                                                 data-bs-dismiss="modal">Close</button>
                                                             <button type="button" class="btn btn-danger">Delete</button>
                                                         </div>
                                                     </div>
-
+                        
                                                 </div>
                                             </div>
                                         </div>
-
-
+                        
+                        
                                     </td>
-
+                        
                                 </tr>
                                 <tr class="subjectlists-tr">
                                     <th scope="row" class="subjectlists-tabledata">2</th>
@@ -367,47 +393,45 @@
                                     <td class="subjectlists-tabledata">Btech</td>
                                     <td class="subjectlists-tabledata">Computer Science Engineering</td>
                                     <td class="subjectlists-tabledata">
-
-                                        <a class="" href="/subjectlist-view/subjectlist-view.html"><i class="fa-solid fa-eye subjectlists-view"></i></a> <br>
-
-
-                                    </td>
-                                    <td class="subjectlists-tabledata">
-
+                        
+                                        <a class="" href="/subjectlist-view/subjectlist-view.html"><i class="fa-solid fa-eye subjectlists-view"></i></a>
+                        
+                        
+                                   
+                        
                                         <a class="" href="/subjectlist-edit/subjectlist-edit.html"><i
-                                                class="fa-solid fa-pen-to-square subjectlists-edit"></i></a> <br>
-
-
-                                    </td>
-                                    <td class="subjectlists-tabledata">
-
+                                                class="fa-solid fa-pen-to-square subjectlists-edit"></i></a>
+                        
+                        
+                                   
+                        
                                         <!-- Button trigger modal -->
-
+                        
                                         <a class="" href="" data-bs-toggle="modal"
                                             data-bs-target="#exampleModal"><i class="fa-solid fa-trash-can subjectlists-delete"></i></a>
-
+                        
                                         <!-- Modal -->
                                         <div class="modal fade" id="exampleModal" tabindex="0"
                                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content">
-
+                        
                                                     <div class="modal-body">
-                                                        <h5> Are you sure,you want to delete this user?</h5> <br>
+                                                        <h5> Are you sure,you want to delete this user?</h5>
                                                         <div class="alluserdata-modal-body">
                                                             <button type="button" class="btn btn-secondary"
                                                                 data-bs-dismiss="modal">Close</button>
                                                             <button type="button" class="btn btn-danger">Delete</button>
                                                         </div>
                                                     </div>
-
+                        
                                                 </div>
                                             </div>
                                         </div>
-
-
+                        
+                        
                                     </td>
-
+                        
                                 </tr>
                                 <tr class="subjectlists-tr">
                                     <th scope="row" class="subjectlists-tabledata">3</th>
@@ -419,47 +443,45 @@
                                     <td class="subjectlists-tabledata">Btech</td>
                                     <td class="subjectlists-tabledata">Computer Science Engineering</td>
                                     <td class="subjectlists-tabledata">
-
-                                        <a class="" href="/subjectlist-view/subjectlist-view.html"><i class="fa-solid fa-eye subjectlists-view"></i></a> <br>
-
-
-                                    </td>
-                                    <td class="subjectlists-tabledata">
-
+                        
+                                        <a class="" href="/subjectlist-view/subjectlist-view.html"><i class="fa-solid fa-eye subjectlists-view"></i></a>
+                        
+                        
+                                  
+                        
                                         <a class="" href="/subjectlist-edit/subjectlist-edit.html"><i
-                                                class="fa-solid fa-pen-to-square subjectlists-edit"></i></a> <br>
-
-
-                                    </td>
-                                    <td class="subjectlists-tabledata">
-
+                                                class="fa-solid fa-pen-to-square subjectlists-edit"></i></a>
+                        
+                        
+                                 
+                        
                                         <!-- Button trigger modal -->
-
+                        
                                         <a class="" href="" data-bs-toggle="modal"
                                             data-bs-target="#exampleModal"><i class="fa-solid fa-trash-can subjectlists-delete"></i></a>
-
+                        
                                         <!-- Modal -->
                                         <div class="modal fade" id="exampleModal" tabindex="0"
                                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content">
-
+                        
                                                     <div class="modal-body">
-                                                        <h5> Are you sure,you want to delete this user?</h5> <br>
+                                                        <h5> Are you sure,you want to delete this user?</h5>
                                                         <div class="alluserdata-modal-body">
                                                             <button type="button" class="btn btn-secondary"
                                                                 data-bs-dismiss="modal">Close</button>
                                                             <button type="button" class="btn btn-danger">Delete</button>
                                                         </div>
                                                     </div>
-
+                        
                                                 </div>
                                             </div>
                                         </div>
-
-
+                        
+                        
                                     </td>
-
+                        
                                 </tr>
                                 <tr class="subjectlists-tr">
                                     <th scope="row" class="subjectlists-tabledata">4</th>
@@ -471,47 +493,45 @@
                                     <td class="subjectlists-tabledata">Btech</td>
                                     <td class="subjectlists-tabledata">Computer Science Engineering</td>
                                     <td class="subjectlists-tabledata">
-
-                                        <a class="" href="/subjectlist-view/subjectlist-view.html"><i class="fa-solid fa-eye subjectlists-view"></i></a> <br>
-
-
-                                    </td>
-                                    <td class="subjectlists-tabledata">
-
+                        
+                                        <a class="" href="/subjectlist-view/subjectlist-view.html"><i class="fa-solid fa-eye subjectlists-view"></i></a>
+                        
+                        
+                                 
+                        
                                         <a class="" href="/subjectlist-edit/subjectlist-edit.html"><i
-                                                class="fa-solid fa-pen-to-square subjectlists-edit"></i></a> <br>
-
-
-                                    </td>
-                                    <td class="subjectlists-tabledata">
-
+                                                class="fa-solid fa-pen-to-square subjectlists-edit"></i></a>
+                        
+                        
+                                 
+                        
                                         <!-- Button trigger modal -->
-
+                        
                                         <a class="" href="" data-bs-toggle="modal"
                                             data-bs-target="#exampleModal"><i class="fa-solid fa-trash-can subjectlists-delete"></i></a>
-
+                        
                                         <!-- Modal -->
                                         <div class="modal fade" id="exampleModal" tabindex="0"
                                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content">
-
+                        
                                                     <div class="modal-body">
-                                                        <h5> Are you sure,you want to delete this user?</h5> <br>
+                                                        <h5> Are you sure,you want to delete this user?</h5>
                                                         <div class="alluserdata-modal-body">
                                                             <button type="button" class="btn btn-secondary"
                                                                 data-bs-dismiss="modal">Close</button>
                                                             <button type="button" class="btn btn-danger">Delete</button>
                                                         </div>
                                                     </div>
-
+                        
                                                 </div>
                                             </div>
                                         </div>
-
-
+                        
+                        
                                     </td>
-
+                        
                                 </tr>
                                 <tr class="subjectlists-tr">
                                     <th scope="row" class="subjectlists-tabledata">5</th>
@@ -523,47 +543,45 @@
                                     <td class="subjectlists-tabledata">Btech</td>
                                     <td class="subjectlists-tabledata">Computer Science Engineering</td>
                                     <td class="subjectlists-tabledata">
-
-                                        <a class="" href="/subjectlist-view/subjectlist-view.html"><i class="fa-solid fa-eye subjectlists-view"></i></a> <br>
-
-
-                                    </td>
-                                    <td class="subjectlists-tabledata">
-
+                        
+                                        <a class="" href="/subjectlist-view/subjectlist-view.html"><i class="fa-solid fa-eye subjectlists-view"></i></a>
+                        
+                        
+                                  
+                        
                                         <a class="" href="/subjectlist-edit/subjectlist-edit.html"><i
-                                                class="fa-solid fa-pen-to-square subjectlists-edit"></i></a> <br>
-
-
-                                    </td>
-                                    <td class="subjectlists-tabledata">
-
+                                                class="fa-solid fa-pen-to-square subjectlists-edit"></i></a>
+                        
+                        
+                                
+                        
                                         <!-- Button trigger modal -->
-
+                        
                                         <a class="" href="" data-bs-toggle="modal"
                                             data-bs-target="#exampleModal"><i class="fa-solid fa-trash-can subjectlists-delete"></i></a>
-
+                        
                                         <!-- Modal -->
                                         <div class="modal fade" id="exampleModal" tabindex="0"
                                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content">
-
+                        
                                                     <div class="modal-body">
-                                                        <h5> Are you sure,you want to delete this user?</h5> <br>
+                                                        <h5> Are you sure,you want to delete this user?</h5>
                                                         <div class="alluserdata-modal-body">
                                                             <button type="button" class="btn btn-secondary"
                                                                 data-bs-dismiss="modal">Close</button>
                                                             <button type="button" class="btn btn-danger">Delete</button>
                                                         </div>
                                                     </div>
-
+                        
                                                 </div>
                                             </div>
                                         </div>
-
-
+                        
+                        
                                     </td>
-
+                        
                                 </tr>
                                 <tr class="subjectlists-tr">
                                     <th scope="row" class="subjectlists-tabledata">6</th>
@@ -575,47 +593,44 @@
                                     <td class="subjectlists-tabledata">Btech</td>
                                     <td class="subjectlists-tabledata">Computer Science Engineering</td>
                                     <td class="subjectlists-tabledata">
-
-                                        <a class="" href="/subjectlist-view/subjectlist-view.html"><i class="fa-solid fa-eye subjectlists-view"></i></a> <br>
-
-
-                                    </td>
-                                    <td class="subjectlists-tabledata">
-
+                        
+                                        <a class="" href="/subjectlist-view/subjectlist-view.html"><i class="fa-solid fa-eye subjectlists-view"></i></a>
+                        
+                        
+                                  
                                         <a class="" href="/subjectlist-edit/subjectlist-edit.html"><i
-                                                class="fa-solid fa-pen-to-square subjectlists-edit"></i></a> <br>
-
-
-                                    </td>
-                                    <td class="subjectlists-tabledata">
-
+                                                class="fa-solid fa-pen-to-square subjectlists-edit"></i></a>
+                        
+                        
+                                 
+                        
                                         <!-- Button trigger modal -->
-
+                        
                                         <a class="" href="" data-bs-toggle="modal"
                                             data-bs-target="#exampleModal"><i class="fa-solid fa-trash-can subjectlists-delete"></i></a>
-
+                        
                                         <!-- Modal -->
                                         <div class="modal fade" id="exampleModal" tabindex="0"
                                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content">
-
+                        
                                                     <div class="modal-body">
-                                                        <h5> Are you sure,you want to delete this user?</h5> <br>
+                                                        <h5> Are you sure,you want to delete this user?</h5>
                                                         <div class="alluserdata-modal-body">
                                                             <button type="button" class="btn btn-secondary"
                                                                 data-bs-dismiss="modal">Close</button>
                                                             <button type="button" class="btn btn-danger">Delete</button>
                                                         </div>
                                                     </div>
-
+                        
                                                 </div>
                                             </div>
                                         </div>
-
-
+                        
+                        
                                     </td>
-
+                        
                                 </tr>
                                 <tr class="subjectlists-tr">
                                     <th scope="row" class="subjectlists-tabledata">7</th>
@@ -627,47 +642,45 @@
                                     <td class="subjectlists-tabledata">Btech</td>
                                     <td class="subjectlists-tabledata">Computer Science Engineering</td>
                                     <td class="subjectlists-tabledata">
-
-                                        <a class="" href="/subjectlist-view/subjectlist-view.html"><i class="fa-solid fa-eye subjectlists-view"></i></a> <br>
-
-
-                                    </td>
-                                    <td class="subjectlists-tabledata">
-
+                        
+                                        <a class="" href="/subjectlist-view/subjectlist-view.html"><i class="fa-solid fa-eye subjectlists-view"></i></a>
+                        
+                        
+                                   
+                        
                                         <a class="" href="/subjectlist-edit/subjectlist-edit.html"><i
-                                                class="fa-solid fa-pen-to-square subjectlists-edit"></i></a> <br>
-
-
-                                    </td>
-                                    <td class="subjectlists-tabledata">
-
+                                                class="fa-solid fa-pen-to-square subjectlists-edit"></i></a>
+                        
+                        
+                                  
+                        
                                         <!-- Button trigger modal -->
-
+                        
                                         <a class="" href="" data-bs-toggle="modal"
                                             data-bs-target="#exampleModal"><i class="fa-solid fa-trash-can subjectlists-delete"></i></a>
-
+                        
                                         <!-- Modal -->
                                         <div class="modal fade" id="exampleModal" tabindex="0"
                                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content">
-
+                        
                                                     <div class="modal-body">
-                                                        <h5> Are you sure,you want to delete this user?</h5> <br>
+                                                        <h5> Are you sure,you want to delete this user?</h5>
                                                         <div class="alluserdata-modal-body">
                                                             <button type="button" class="btn btn-secondary"
                                                                 data-bs-dismiss="modal">Close</button>
                                                             <button type="button" class="btn btn-danger">Delete</button>
                                                         </div>
                                                     </div>
-
+                        
                                                 </div>
                                             </div>
                                         </div>
-
-
+                        
+                        
                                     </td>
-
+                        
                                 </tr>
                                 <tr class="subjectlists-tr">
                                     <th scope="row" class="subjectlists-tabledata">8</th>
@@ -679,47 +692,44 @@
                                     <td class="subjectlists-tabledata">Btech</td>
                                     <td class="subjectlists-tabledata">Computer Science Engineering</td>
                                     <td class="subjectlists-tabledata">
-
-                                        <a class="" href="/subjectlist-view/subjectlist-view.html"><i class="fa-solid fa-eye subjectlists-view"></i></a> <br>
-
-
-                                    </td>
-                                    <td class="subjectlists-tabledata">
-
+                        
+                                        <a class="" href="/subjectlist-view/subjectlist-view.html"><i class="fa-solid fa-eye subjectlists-view"></i></a>
+                        
+                        
+                                  
                                         <a class="" href="/subjectlist-edit/subjectlist-edit.html"><i
-                                                class="fa-solid fa-pen-to-square subjectlists-edit"></i></a> <br>
-
-
-                                    </td>
-                                    <td class="subjectlists-tabledata">
-
+                                                class="fa-solid fa-pen-to-square subjectlists-edit"></i></a>
+                        
+                        
+                               
+                        
                                         <!-- Button trigger modal -->
-
+                        
                                         <a class="" href="" data-bs-toggle="modal"
                                             data-bs-target="#exampleModal"><i class="fa-solid fa-trash-can subjectlists-delete"></i></a>
-
+                        
                                         <!-- Modal -->
                                         <div class="modal fade" id="exampleModal" tabindex="0"
                                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content">
-
+                        
                                                     <div class="modal-body">
-                                                        <h5> Are you sure,you want to delete this user?</h5> <br>
+                                                        <h5> Are you sure,you want to delete this user?</h5>
                                                         <div class="alluserdata-modal-body">
                                                             <button type="button" class="btn btn-secondary"
                                                                 data-bs-dismiss="modal">Close</button>
                                                             <button type="button" class="btn btn-danger">Delete</button>
                                                         </div>
                                                     </div>
-
+                        
                                                 </div>
                                             </div>
                                         </div>
-
-
+                        
+                        
                                     </td>
-
+                        
                                 </tr>
                                 <tr class="subjectlists-tr">
                                     <th scope="row" class="subjectlists-tabledata">9</th>
@@ -731,47 +741,44 @@
                                     <td class="subjectlists-tabledata">Btech</td>
                                     <td class="subjectlists-tabledata">Computer Science Engineering</td>
                                     <td class="subjectlists-tabledata">
-
-                                        <a class="" href="/subjectlist-view/subjectlist-view.html"><i class="fa-solid fa-eye subjectlists-view"></i></a> <br>
-
-
-                                    </td>
-                                    <td class="subjectlists-tabledata">
-
+                        
+                                        <a class="" href="/subjectlist-view/subjectlist-view.html"><i class="fa-solid fa-eye subjectlists-view"></i></a>
+                        
+                        
+                                    
                                         <a class="" href="/subjectlist-edit/subjectlist-edit.html"><i
-                                                class="fa-solid fa-pen-to-square subjectlists-edit"></i></a> <br>
-
-
-                                    </td>
-                                    <td class="subjectlists-tabledata">
-
+                                                class="fa-solid fa-pen-to-square subjectlists-edit"></i></a>
+                        
+                        
+                                 
+                        
                                         <!-- Button trigger modal -->
-
+                        
                                         <a class="" href="" data-bs-toggle="modal"
                                             data-bs-target="#exampleModal"><i class="fa-solid fa-trash-can subjectlists-delete"></i></a>
-
+                        
                                         <!-- Modal -->
                                         <div class="modal fade" id="exampleModal" tabindex="0"
                                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content">
-
+                        
                                                     <div class="modal-body">
-                                                        <h5> Are you sure,you want to delete this user?</h5> <br>
+                                                        <h5> Are you sure,you want to delete this user?</h5>
                                                         <div class="alluserdata-modal-body">
                                                             <button type="button" class="btn btn-secondary"
                                                                 data-bs-dismiss="modal">Close</button>
                                                             <button type="button" class="btn btn-danger">Delete</button>
                                                         </div>
                                                     </div>
-
+                        
                                                 </div>
                                             </div>
                                         </div>
-
-
+                        
+                        
                                     </td>
-
+                        
                                 </tr>
                                 <tr class="subjectlists-tr">
                                     <th scope="row" class="subjectlists-tabledata">10</th>
@@ -783,55 +790,55 @@
                                     <td class="subjectlists-tabledata">Btech</td>
                                     <td class="subjectlists-tabledata">Computer Science Engineering</td>
                                     <td class="subjectlists-tabledata">
-
-                                        <a class="" href="/subjectlist-view/subjectlist-view.html"><i class="fa-solid fa-eye subjectlists-view"></i></a> <br>
-
-
-                                    </td>
-                                    <td class="subjectlists-tabledata">
-
+                        
+                                        <a class="" href="/subjectlist-view/subjectlist-view.html"><i class="fa-solid fa-eye subjectlists-view"></i></a>
+                        
+                        
+                                    
+                        
                                         <a class="" href="/subjectlist-edit/subjectlist-edit.html"><i
-                                                class="fa-solid fa-pen-to-square subjectlists-edit"></i></a> <br>
-
-
-                                    </td>
-                                    <td class="subjectlists-tabledata">
-
+                                                class="fa-solid fa-pen-to-square subjectlists-edit"></i></a>
+                        
+                        
+                                 
+                        
                                         <!-- Button trigger modal -->
-
+                        
                                         <a class="" href="" data-bs-toggle="modal"
                                             data-bs-target="#exampleModal"><i class="fa-solid fa-trash-can subjectlists-delete"></i></a>
-
+                        
                                         <!-- Modal -->
                                         <div class="modal fade" id="exampleModal" tabindex="0"
                                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content">
-
+                        
                                                     <div class="modal-body">
-                                                        <h5> Are you sure,you want to delete this user?</h5> <br>
+                                                        <h5> Are you sure,you want to delete this user?</h5>
                                                         <div class="alluserdata-modal-body">
                                                             <button type="button" class="btn btn-secondary"
                                                                 data-bs-dismiss="modal">Close</button>
                                                             <button type="button" class="btn btn-danger">Delete</button>
                                                         </div>
                                                     </div>
-
+                        
                                                 </div>
                                             </div>
                                         </div>
-
-
+                        
+                        
                                     </td>
-
+                        
                                 </tr>
-
+                        
                              
-
-
-
+                        
+                        
+                        
                             </tbody>
                         </table>
+
+                        <!-- pagination -->
                         <div class="subjectlists-user-pagination-area" aria-label="Page navigation">
                             <ul class="pagination justify-content-center">
                                 <li class="page-item">
@@ -845,7 +852,8 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                       </div>
+                    </main>
 
 
 

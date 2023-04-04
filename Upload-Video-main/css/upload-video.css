@@ -98,7 +98,7 @@ body {
 }
 
 .upload-video-heading > h3 {
-    color: #ddd;
+   
     margin-bottom: 0;
 }
 
@@ -352,12 +352,11 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-inline: 20px;
-    color: #fff;
-    background-color: #213832;
+   
 }
 
 .upload-video-heading-text{
-    color: #fff;
+   
 }
 .upload-video-btn{
     color: #fff;
@@ -375,23 +374,24 @@ body {
 
 .upload-video-add {
     margin: 10px;
-    padding: 10px;
+    padding: 10px ;
     text-align: end;
 }
 
 .upload-video-user-btn {
-  
-    background: none;
+    width: 120px;
+    font-size: 15px;
+    background-color: #3742fa !important;
     color: white;
-    background-color: #3742fa;
-    border: 1px solid #41464b;
+   
+    border: 1px solid #3742fa;
     border-radius: 0;
 }
 
 .upload-video-user-btn:hover {
-    border: 1px solid #41464b;
+    border: 1px solid #ffa502;
     color: #fff;
-    background-color: #ffa502;
+    background-color: #ffa502 !important;
 
    
 }
@@ -406,3 +406,6 @@ body {
     color: #fff;
     font-weight: 1000;
 }
+
+
+
